@@ -1,34 +1,36 @@
-<h5>Add New Contact</h5>
+<div class="container">
+  <h5>Add New Contact</h5>
 
-<%= form_for @contact do |f| %>
-<% if @contact && @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:
-      </h2>
-      <ul>
-        <% @contact.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
+  <%= form_for @contact do |f| %>
+  <% if @contact && @contact.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:
+        </h2>
+        <ul>
+          <% @contact.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <p>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name %>
+    </p>
+
+    <p>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+    </p>
+
+    <p>
+      <%=f.label :number %>
+      <%=f.text_field :number %>
+    </p>
+
+    <p>
+       <%= f.submit %>
+    </p>
   <% end %>
-  <p>
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-  </p>
-
-  <p>
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-  </p>
-
-  <p>
-    <%=f.label :number %>
-    <%=f.text_field :number %>
-  </p>
-
-  <p>
-     <%= f.submit %>
-  </p>
-<% end %>
+</div>
