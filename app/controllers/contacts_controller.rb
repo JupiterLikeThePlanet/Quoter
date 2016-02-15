@@ -26,7 +26,6 @@ class ContactsController < ApplicationController
 
   def edit
     @contact = Contact.find(params[:id])
-    #@use
   end
 
   def update
