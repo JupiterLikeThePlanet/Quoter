@@ -28,11 +28,14 @@ Contact.create(first_name: "", last_name: "", number: "", user_id: 11)
 Contact.create(first_name: "", last_name: "", number: "", user_id: 11)
 
 Contact.create(first_name: "", last_name: "", number: "", user_id: 11)
-##################################################
 
+################# RESOURCES #####################
 
 Resource.create(name: "Quote of the Day", link: "http://quotes.rest/qod.json", access: "quote['contents']['quotes'][0]['quote']")
-# quote['content'][quotes][quote]
-#, "author['content'][quotes][author]"
+
+Resource.create(name: "Yo Mamma", link: "http://api.yomomma.info/", access: "joke['joke']")
+
+Resource.create(name: "Chuck Norris", link: "http://api.icndb.com/jokes/random?exclude=Array", access: "joke['value']['joke']")
+
 #################################################
 
