@@ -8,9 +8,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
-  def edit
+  def show
     @contact = Contact.find(params[:id])
   end
+
 
   def create
     @contact = Contact.new(contact_params)
@@ -23,22 +24,25 @@ class ContactsController < ApplicationController
     end
   end
 
-  def show
+  def edit
     @contact = Contact.find(params[:id])
   end
 
   def update
       @contact = Contact.find(params[:id])
       if @contact.update(contact_params)
-        redirect_to contacts
+        flash[:success] = "Contact updated!"
+        redirect_to contacts_path
       else
+        flash[:danger] = "Contact did not update, try again"
         render 'edit'
       end
   end
 
   def destroy
     @contact = Contact.find(params[:id]).destroy
-    redirect_to contacts
+    flash[:success] = "Contact Deleted!"
+    redirect_to contacts_path
   end
 
   private

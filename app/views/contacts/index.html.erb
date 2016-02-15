@@ -1,9 +1,16 @@
 <h2>Contacts</h2>
-<ul>
-  <% @contacts.each do |contact| %>
-    <li><%=contact.first_name + " " + contact.last_name + " | " + contact.number%></li>
-    <%= link_to "Edit Contact", edit_contact_path, method: :get %>
-  <%end%>
-</ul>
+<div class ="container">
+  <ul>
+    <% @contacts.each do |contact| %>
+      <li><%=contact.first_name + " " + contact.last_name + " | " + contact.number%> |
+        <%= link_to "Edit", edit_contact_path(contact), method: :get %> |
+        <%= link_to "Delete", contact_path(contact), method: :delete, data: { confirm: "You sure?"} %></li>
+    <%end%>
+  </ul>
 
-<%= link_to "Add Contact", new_contact_path, method: :get %>
+  <%= link_to "Add Contact", new_contact_path, method: :get %>
+
+</div>
+
+<%= link_to "< Back", user_url(current_user), method: :get %>
+
