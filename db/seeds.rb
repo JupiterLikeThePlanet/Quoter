@@ -29,10 +29,9 @@ Contact.create(first_name: "S", last_name: "A", number: "6472029000", user_id: 1
 
 Contact.create(first_name: "J", last_name: "B", number: "9857885503", user_id: 11)
 ##################################################
-# Resource.create(name: "Quote of the Day", link: "http://quotes.rest/qod.json", access: "quote['content'][quotes][quote]")
-#, "author['content'][quotes][author]"
 
-Resource.create(name: "Quote of the Day", link: "http://quotes.rest/qod.json", access: "quote[:contents][:quotes][0][:quote]")
+
+Resource.create(name: "Quote of the Day", link: "http://quotes.rest/qod.json", access: "quote['contents']['quotes'][0]['quote']")
 # quote['content'][quotes][quote]
 #, "author['content'][quotes][author]"
 #################################################

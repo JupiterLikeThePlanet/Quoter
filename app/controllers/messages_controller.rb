@@ -17,50 +17,49 @@ class MessagesController < ApplicationController
 
 
 
-
-
-    # p account_sid
-    # p auth_token
-
     @client = Twilio::REST::Client.new account_sid, auth_token
 
-
     resp = Net::HTTP.get_response(URI.parse(@source.link))
-
-    # quote = JSON.parse(data)
 
     data = resp.body
     quote = JSON.parse(data)
     @text = eval(@source.access)
-    # p "#"*90
-    # p "Quote: ", quote
-    # p "#"*90
-    #@text = quote["contents"]["quotes"][0]["quote"]
-    # p ""*90
-    # p quote
-    # p "#"*90
-    #@qotd = quote['contents']
-    # p "#"*90
-    # p @qotd
-    # p "#"*90
-    # @author = quote[1][0][1]
-    # p "#"*90
 
-    #p @text
-    # p "#"*90
+    if @text.length > 160
+      n = @text.length
+      first = @text[0..121]
+      second = @text[122..n]
 
+      @client.account.sms.messages.create({
+        :from => "+1 985-605-0721",
+        :to => @contact.number,
+        :body => first
+      })
 
-    @client.account.sms.messages.create({
-      :from => "+1 985-605-0721",
-      :to => @contact.number,
-      #:body => @source.access,
-      #:body => @quote[:contents][:quotes][0][:quote]
-      :body => @text
-    })
+      @client.account.sms.messages.create({
+        :from => "+1 985-605-0721",
+        :to => @contact.number,
+        :body => second
+      })
 
-     # test =  Message.new(contact_id: @contact.id, user_id: current_user.id, message: @text)
-     # test.save
-     flash[:success] = "Message Sent"
-     redirect_to new_message_path
+    flash[:success] = "Message Sent In Two Parts"
+
+    elsif
+      @client.account.sms.messages.create({
+        :from => "+1 985-605-0721",
+        :to => @contact.number,
+        :body => @text
+      })
+
+      flash[:success] = "Message Sent"
+
+    else
+      flash[:danger] = "Message Too Long Or Did Not Send"
+
+    end
+
+    redirect_to new_message_path
+
   end
+
 end
