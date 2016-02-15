@@ -30080,3 +30080,76 @@ Processing by MessagesController#new as HTML
   [1m[36mResource Load (0.3ms)[0m  [1mSELECT "resources".* FROM "resources"[0m
   Rendered messages/new.html.erb within layouts/application (4.9ms)
 Completed 200 OK in 556ms (Views: 506.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/messages/new" for ::1 at 2016-02-15 11:36:48 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (41.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MessagesController#new as HTML
+  [1m[35mUser Load (40.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mContact Load (21.5ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1[0m  [["user_id", 13]]
+  [1m[35mResource Load (16.6ms)[0m  SELECT "resources".* FROM "resources"
+  Rendered messages/new.html.erb within layouts/application (135.5ms)
+Completed 200 OK in 1931ms (Views: 1258.2ms | ActiveRecord: 224.7ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/application.self-440d52ff95743870db102eea2b3166bc87aac76672e34022d3980f770313ddc1.css?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 11:36:53 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 11:36:54 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 11:36:54 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 11:36:54 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-15 11:36:54 -0800
+
+
+Started POST "/messages" for ::1 at 2016-02-15 11:37:03 -0800
+Processing by MessagesController#create as HTML
+  Parameters: {"id"=>"19", "api_id"=>"3"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mResource Load (0.3ms)[0m  SELECT  "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT 1  [["id", 3]]
+Redirected to http://localhost:3000/messages/new
+Completed 302 Found in 1700ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/messages/new" for ::1 at 2016-02-15 11:37:04 -0800
+Processing by MessagesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35mContact Load (0.6ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1  [["user_id", 13]]
+  [1m[36mResource Load (0.4ms)[0m  [1mSELECT "resources".* FROM "resources"[0m
+  Rendered messages/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 1.2ms)
