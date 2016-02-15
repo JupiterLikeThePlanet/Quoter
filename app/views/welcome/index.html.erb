@@ -1,15 +1,22 @@
 
-<h1>Welcome to Quoter!</h1>
 
-<h3>A messaging app for Quotes of the Day</h3>
+<!-- <header>
+  <div class="header-content">
+      <div class="header-content-inner">
+        <h1>Welcome to Quoter!</h1>
+        <hr>
+        <h3>A messaging app for Quotes of the Day</h3>
+    </div>
+  </div>
+</header> -->
 
-
-<div class="container" >
+<div class="welcome_boxes">
   <p>Get an account!</p>
-    <%= link_to 'Register', new_user_path, method: :get, id: 'registerLink'%>
+    <%= link_to 'Register', new_user_path, method: :get, id: 'registerLink', class: 'login'%>
   </div>
 
-<div class="container">
+<div class="welcome_boxes">
   <p>Already have an account?</p>
-    <%= link_to 'Login', login_path, method: :get, id: 'loginLink' %>
+    <%= link_to 'Login', login_path, method: :get, id: 'loginLink', class: 'login' %>
 </div>
+

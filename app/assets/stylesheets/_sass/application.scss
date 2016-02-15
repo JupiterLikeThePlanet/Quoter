@@ -1,3 +1,11 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$nepalGrey: #a2afb8;
+$persianGreen: #00a693;
+$nav-font: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+
+
 .container {
   background-color: #294860;
   border-radius: 20px;
@@ -17,19 +25,24 @@
   margin: 30px auto;
   position: relative;
   margin-left: 25em;
+
+    h1{
+      color: white;
+    }
+
+    h2{
+      color: white;
+    }
+
+    h3{
+      color: white;
+    }
+
+    h4{
+      color: white;
+    }
 }
-.container h1 {
-  color: white;
-}
-.container h2 {
-  color: white;
-}
-.container h3 {
-  color: white;
-}
-.container h4 {
-  color: white;
-}
+
 
 .flash {
   font-family: Helvetica;
@@ -50,6 +63,7 @@
   opacity: 0.8;
 }
 
+
 #contact_name {
   opacity: 1;
   font-weight: bold;
@@ -63,22 +77,24 @@
   margin: auto;
   width: 60%;
   margin-top: 20px;
-}
-.contact :hover {
-  -webkit-transform: scale(1.007);
-  /* Safari and Chrome */
+
+  :hover {
+      -webkit-transform:scale(1.007); /* Safari and Chrome */
+  }
 }
 
+
 nav {
-  float: left;
+  float:left;
   position: fixed;
 }
+
 
 .left {
   margin-left: 23em;
 }
 
-.top_left {
+.top_left{
   margin-top: -70px;
   margin-left: 23em;
 }

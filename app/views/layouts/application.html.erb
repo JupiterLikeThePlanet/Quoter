@@ -6,14 +6,46 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="background">
+  <div id="hline1"></div>
+  <div id="hline4"></div>
+
+<nav class="navbar">
+    <header><h1>Quoter</h1></header>
+    <p>Quote some stuff
+      <br>
+        (or send a joke or two)
+      <br>
+    </p>
+
+  <div id="hline2"></div>
+  <% if current_user %>
+    <br>
+    <a href="#">Contacts</a>
+    <br>
+    <br>
+    <a href="#">Messages</a>
+    <br>
+    <br>
+    <a href="#">Edit User</a>
+    <br>
+    <br>
+    <a href="#">Log Out</a>
+    <br>
+  <%end%>
+
+  </nav>
+
+
   <div class="flash">
     <% flash.each do |name, msg| -%>
       <%= content_tag :div, msg, class: name %>
     <% end -%>
   </div>
 
-<%= yield %>
+<div id="container_positioning">
+  <%= yield %>
+</div>
 
 <%= debug(params) if Rails.env.development? %>
 
