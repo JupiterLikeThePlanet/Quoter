@@ -4,9 +4,6 @@ class MessagesController < ApplicationController
 
   def new
     @contacts = current_user.contacts
-    p "*"*80
-    p @contacts
-    p "*"*80
     @source = Resource.all
   end
 
@@ -16,8 +13,11 @@ class MessagesController < ApplicationController
 
     # account_sid = ENV["TWILIO_SID"]
     # auth_token = ENV["TWILIO_AUTH_TOKEN"]
-    account_sid = ""
-    auth_token = ""
+    #test
+
+
+
+
 
     # p account_sid
     # p auth_token
@@ -27,10 +27,10 @@ class MessagesController < ApplicationController
 
     resp = Net::HTTP.get_response(URI.parse(@source.link))
 
-    quote = JSON.parse(data)
+    # quote = JSON.parse(data)
 
     data = resp.body
-    joke = JSON.parse(data)
+    quote = JSON.parse(data)
     @text = eval(@source.access)
     # p "#"*90
     # p "Quote: ", quote
@@ -60,6 +60,7 @@ class MessagesController < ApplicationController
 
      # test =  Message.new(contact_id: @contact.id, user_id: current_user.id, message: @text)
      # test.save
-
+     flash[:success] = "Message Sent"
+     redirect_to new_message_path
   end
 end

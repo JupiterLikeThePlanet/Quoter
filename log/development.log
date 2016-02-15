@@ -28964,3 +28964,14 @@ ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"co
   [1m[35mContact Load (0.5ms)[0m  SELECT "contacts".* FROM "contacts"
   [1m[36mContact Load (104.0ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" DESC LIMIT 1[0m
   [1m[35mContact Load (0.7ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" DESC LIMIT 1
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "resources" ("name", "link", "access", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Quote of the Day"], ["link", "http://quotes.rest/qod.json"], ["access", "quote[:contents][:quotes][0][:quote]"], ["created_at", "2016-02-15 02:59:41.640031"], ["updated_at", "2016-02-15 02:59:41.640031"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (36.1ms)[0m  DELETE FROM "resources"
+  [1m[36mResource Load (0.5ms)[0m  [1mSELECT "resources".* FROM "resources"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "resources" ("name", "link", "access", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Yo Mamma"], ["link", "http://api.yomomma.info/"], ["access", "quote['joke']"], ["created_at", "2016-02-15 03:01:42.732870"], ["updated_at", "2016-02-15 03:01:42.732870"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "resources" ("name", "link", "access", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Quote of the Day"], ["link", "http://quotes.rest/qod.json"], ["access", "quote[:contents][:quotes][0][:quote]"], ["created_at", "2016-02-15 03:01:50.317913"], ["updated_at", "2016-02-15 03:01:50.317913"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
