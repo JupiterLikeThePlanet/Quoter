@@ -1,3 +1,4 @@
 .env
+log/development.log
 development.log
 /tmp

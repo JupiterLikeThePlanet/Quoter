@@ -28954,3 +28954,13 @@ ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"co
   Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (192.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (287.1ms)[0m  INSERT INTO "resources" ("name", "link", "access", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Yo Mamma"], ["link", "http://api.yomomma.info/"], ["access", "joke['joke']"], ["created_at", "2016-02-15 00:48:25.238717"], ["updated_at", "2016-02-15 00:48:25.238717"]]
+  [1m[36m (93.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (30.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mContact Load (27.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1[0m  [["user_id", 13]]
+  [1m[35mContact Load (30.8ms)[0m  SELECT "contacts".* FROM "contacts"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mContact Load (0.5ms)[0m  SELECT "contacts".* FROM "contacts"
+  [1m[36mContact Load (104.0ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" DESC LIMIT 1[0m
+  [1m[35mContact Load (0.7ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" DESC LIMIT 1

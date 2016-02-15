@@ -4,6 +4,9 @@ class MessagesController < ApplicationController
 
   def new
     @contacts = current_user.contacts
+    p "*"*80
+    p @contacts
+    p "*"*80
     @source = Resource.all
   end
 
@@ -24,11 +27,14 @@ class MessagesController < ApplicationController
 
     resp = Net::HTTP.get_response(URI.parse(@source.link))
 
-    data = resp.body
     quote = JSON.parse(data)
-    p "#"*90
-    p "Quote: ", quote
-    p "#"*90
+
+    data = resp.body
+    joke = JSON.parse(data)
+    @text = eval(@source.access)
+    # p "#"*90
+    # p "Quote: ", quote
+    # p "#"*90
     #@text = quote["contents"]["quotes"][0]["quote"]
     # p ""*90
     # p quote
@@ -39,8 +45,8 @@ class MessagesController < ApplicationController
     # p "#"*90
     # @author = quote[1][0][1]
     # p "#"*90
-    @text = eval(@source.access)
-    p @text
+
+    #p @text
     # p "#"*90
 
 
@@ -51,6 +57,9 @@ class MessagesController < ApplicationController
       #:body => @quote[:contents][:quotes][0][:quote]
       :body => @text
     })
+
+     # test =  Message.new(contact_id: @contact.id, user_id: current_user.id, message: @text)
+     # test.save
 
   end
 end
