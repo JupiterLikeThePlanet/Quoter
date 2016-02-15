@@ -14,8 +14,12 @@ class ContactsController < ApplicationController
 
 
   def create
-    @contact = Contact.new(contact_params)
+    @contact = current_user.contacts.create(contact_params)
+
     if @contact.save
+    p "*"*80
+    p @contact
+    p "*"*80
       flash[:success] = "Contact Added!"
       redirect_to contacts_path
     else
@@ -48,7 +52,7 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:first_name, :last_name, :number)
+    params.require(:contact).permit(:first_name, :last_name, :number, user_id: current_user.id)
   end
 
 end
