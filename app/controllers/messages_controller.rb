@@ -40,7 +40,7 @@ class MessagesController < ApplicationController
         :body => second
       })
 
-    flash[:success] = "Message Sent In Two Parts"
+    flash[:success] = "Successfully sent the message: '#{first} #{second}'"
 
     elsif
       @client.account.sms.messages.create({
@@ -49,7 +49,7 @@ class MessagesController < ApplicationController
         :body => @text
       })
 
-      flash[:success] = "Message Sent"
+      flash[:success] = "Successfully sent the message: '#{@text}'"
 
     else
       flash[:danger] = "Message Too Long Or Did Not Send"
