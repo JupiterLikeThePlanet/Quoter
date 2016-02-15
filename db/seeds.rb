@@ -22,12 +22,12 @@ end
 #end
 #User.create(first_name: "Shelly", last_name: "Cat", email: "mail@gmail.com", password: "test1234")
 
-User.create(first_name: "Jupiter", last_name: "Baudot", email: "jupiterthecynic@gmail.com", password: "test1234")
+User.create(first_name: "", last_name: "", email: "", password: "test1234")
 # User.create(first_name: "", last_name: "", email: "", password: "")
-Contact.create(first_name: "Imraan", last_name: "Ismail", number: "5045643032", user_id: 11)
-Contact.create(first_name: "S", last_name: "A", number: "6472029000", user_id: 11)
+Contact.create(first_name: "", last_name: "", number: "", user_id: 11)
+Contact.create(first_name: "", last_name: "", number: "", user_id: 11)
 
-Contact.create(first_name: "J", last_name: "B", number: "9857885503", user_id: 11)
+Contact.create(first_name: "", last_name: "", number: "", user_id: 11)
 ##################################################
 
 

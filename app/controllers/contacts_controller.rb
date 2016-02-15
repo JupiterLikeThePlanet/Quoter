@@ -17,9 +17,6 @@ class ContactsController < ApplicationController
     @contact = current_user.contacts.create(contact_params)
 
     if @contact.save
-    p "*"*80
-    p @contact
-    p "*"*80
       flash[:success] = "Contact Added!"
       redirect_to contacts_path
     else

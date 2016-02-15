@@ -11,11 +11,9 @@ class MessagesController < ApplicationController
     @contact = Contact.find(params[:id])
     @source = Resource.find(params[:api_id])
 
-    # account_sid = ENV["TWILIO_SID"]
-    # auth_token = ENV["TWILIO_AUTH_TOKEN"]
-    #test
-
-
+#dotenv way
+    account_sid = ENV['TWILIO_SID']
+    auth_token = ENV["TWILIO_AUTH_TOKEN"]
 
     @client = Twilio::REST::Client.new account_sid, auth_token
 
