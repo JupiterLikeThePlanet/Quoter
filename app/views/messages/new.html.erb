@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container center_div" align ='center'>
   <form action="/messages" method="POST">
 
     <select name="id">
@@ -14,6 +14,8 @@
     </select>
 
     <input type="submit" value="Submit">
+    <br>
+    <br>
+    <%= link_to "< Back", user_url(current_user), method: :get %>
 </div>
 
-<%= link_to "< Back", user_url(current_user), method: :get %>

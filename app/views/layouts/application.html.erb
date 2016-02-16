@@ -4,20 +4,27 @@
   <title>Quoter</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <!-- Font lings from google apis -->
+  <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render 'layouts/navbar' %>
 
-
-
+<% if flash[:success] || flash[:danger]%>
   <div class="flash">
     <% flash.each do |name, msg| -%>
       <%= content_tag :div, msg, class: name %>
-    <% end -%>
+    <% end %>
   </div>
-
+<%end%>
 
   <%= yield %>
+
+
 
 
 </body>
