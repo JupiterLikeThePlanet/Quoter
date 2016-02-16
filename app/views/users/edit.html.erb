@@ -1,5 +1,8 @@
-<div class="container">
-  <h5>Edit User</h5>
+<div class="margin_header">
+  <h1>Edit User</h1>
+</div>
+
+<div class="container center_div">
     <%= form_for current_user do |f| %>
 
     <p>
@@ -26,5 +29,6 @@
       <%= f.submit class: 'button tiny radius' %>
     </p>
     <%end%>
-
+    <br>
+    <%= link_to "< Back", user_url(current_user), method: :get %>
 </div>

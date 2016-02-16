@@ -1,5 +1,7 @@
-<div class="container center_div" align ='center'>
-  <h5>Add New Contact</h5>
+<div class="margin_header">
+  <h1>Add New Contact</h1>
+</div>
+<div class="container center_div">
 
   <%= form_for @contact do |f| %>
   <% if @contact && @contact.errors.any? %>
@@ -33,6 +35,9 @@
        <%= f.submit %>
     </p>
   <% end %>
+
+  <%= link_to "< Back", user_url(current_user), method: :get %>
+
 </div>
 
-<%= link_to "< Back", user_url(current_user), method: :get %>
+

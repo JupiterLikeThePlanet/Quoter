@@ -60,7 +60,7 @@ body{
         padding: 14px 16px;
         text-decoration: none;
 
-        a:hover{
+        &:hover{
             background-color: #111;
         }
       }
@@ -72,7 +72,6 @@ body{
 .container {
   background-color: $persianGreen;
   color: white;
-
   border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
@@ -80,7 +79,7 @@ body{
   margin-left: 25em;
   max-width: 700px;
   min-width: 275px;
-  max-height: 600px;
+
   min-height: 200px;
   opacity: 1;
 
@@ -113,6 +112,18 @@ body{
   display: inline-block;
 }
 
+.shadow {
+  -webkit-box-shadow: 11px 10px 17px 0px rgba(119,119,119,1);
+  -moz-box-shadow: 11px 10px 17px 0px rgba(119,119,119,1);
+  box-shadow: 11px 10px 17px 0px rgba(119,119,119,1);
+}
+
+.margin_header{
+  position: relative;
+  top: 150px;
+  left: 405px;
+}
+
 .center_div{
   margin-top: 10em;
 }
@@ -129,13 +140,17 @@ body{
 }
 
 .flash {
+  position: relative;
+  top: 100px;
+  left: 50px;
   font-family: Helvetica;
-  background-color: #039f8f;
+  background-color: $smokeyTopaz;
   padding: 10px;
   margin: 30px auto;
   border-radius: 20px;
   width: 30%;
   color: white;
+  text-align: center;
 }
 
 
@@ -154,7 +169,7 @@ body{
   width: 60%;
   margin-top: 20px;
 
-  :hover {
+  &:hover {
       -webkit-transform:scale(1.007); /* Safari and Chrome */
   }
 }
@@ -174,3 +189,8 @@ nav {
   margin-top: -70px;
   margin-left: 23em;
 }
+
+.solidgold{
+  border-style: groove;
+  border-color: #c5b358;
+  }

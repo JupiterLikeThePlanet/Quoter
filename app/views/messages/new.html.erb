@@ -1,4 +1,11 @@
+<div class="margin_header">
+  <h1>Send a message</h1>
+</div>
 <div class="container center_div" align ='center'>
+  <div align = "left">
+    <%= link_to "< Back", user_url(current_user), method: :get %>
+  </div>
+
   <form action="/messages" method="POST">
 
     <select name="id">
@@ -14,8 +21,7 @@
     </select>
 
     <input type="submit" value="Submit">
-    <br>
-    <br>
-    <%= link_to "< Back", user_url(current_user), method: :get %>
+
+
 </div>
 

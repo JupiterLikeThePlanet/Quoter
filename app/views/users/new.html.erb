@@ -1,4 +1,9 @@
-<div class="container center_div" id="signUp">
-  <h5>Sign up</h5>
-    <%= render 'form' %>
+<div class='margin_header'>
+  <h1>Sign up</h1>
 </div>
+  <div class="container center_div" id="signUp">
+      <%= render 'form' %>
+      <br>
+      <p>Already have an account?</p>
+      <%= link_to 'Login', login_path, method: :get, id: 'loginLink', class: 'login' %>
+  </div>
