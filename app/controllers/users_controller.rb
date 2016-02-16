@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    #show_page unless current_user.id != @user.id
   end
 
   def index
@@ -21,9 +22,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       flash[:success] = "You're now a Quoter!"
-      #session[:user_id] = @user.id
-      # redirect_to users_path
       redirect_to user_url(@user)
     else
       flash[:danger] = "User did not save, try again"

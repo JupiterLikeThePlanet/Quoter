@@ -61,7 +61,9 @@ body {
   margin-left: 25em;
   max-width: 700px;
   min-width: 275px;
+  max-height: 500px;
   min-height: 200px;
+  overflow: scroll;
   opacity: 1;
 }
 .container h1 {
