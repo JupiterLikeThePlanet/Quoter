@@ -1,18 +1,26 @@
-<div class='container'>
+<div class="container center_div" align ='center'>
   <p>Welcome <%= @user.first_name %> <%= @user.last_name %> </p>
 
   <p>EMAIL: <%= @user.email %></p>
   <% if current_user %>
     <%= link_to 'Edit User', edit_user_path(current_user), class: 'button tiny radius' %> |
-    <%= link_to 'Delete User', user_path(@user), method: :delete, data: { confirm: "You sure?"}, class: 'button tiny radius'%> |
-    <%= link_to 'Logout', logout_path, method: :delete %>
+    <%= link_to 'Delete User', user_path(@user), method: :delete, data: { confirm: "You sure?"}, class: 'button tiny radius'%>
   <%end %>
+
+  <br>
+  <br>
+
+  <div class="welcome_boxes">
+    <%= link_to 'Contacts', contacts_path, method: :get %>
+  </div>
+
+
+  <br>
+
+  <div class="welcome_boxes">
+    <%= link_to 'Messages', new_message_path, method: :get %>
+  </div>
+
 </div>
 
 
-<div class='container'>
-  <ul>
-    <li><%= link_to 'Contacts', contacts_path, method: :get %></li>
-    <li><%= link_to 'Messages', new_message_path, method: :get %></li>
-  </ul>
-</div>

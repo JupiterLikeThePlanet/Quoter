@@ -1,43 +1,88 @@
 $font-stack: Helvetica, sans-serif;
+$fontCorben: 'Corben', Georgia, Times, serif;
+$fontNobile: 'Nobile', Helvetica, Arial, sans-serif;
+$nav-font: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 $primary-color: #333;
 $nepalGrey: #a2afb8;
 $persianGreen: #00a693;
 $smokeyTopaz: #9300A6;
-$nav-font: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+$lightBlack: #191919;
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontCorben;
+}
+
+
+p,
+div {
+  font-family: $fontNobile;
+}
 
 body{
   background-image: url("quill.jpg");
   background-size: 100%;
   background-repeat: repeat;
+  position: relative;
 }
-.container2 {
-  background-color: #294860;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 30px auto;
-  color: white;
-  font-family: Helvetica;
-  height: 300px;
-  width: 200px;
-  display: inline-block;
+
+#nav_bar {
+  background-color: $lightBlack;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+
+
+  ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    li {
+      display: inline;
+      float: left;
+
+      a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+        a:hover{
+            background-color: #111;
+        }
+      }
+    }
+  }
 }
+
 
 .container {
   background-color: $persianGreen;
   color: white;
-  font-family: $font-stack;
+
   border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
-  position: absolute;
+  position: relative;
   margin-left: 25em;
   max-width: 700px;
-  min-width: 620px;
+  min-width: 275px;
   max-height: 600px;
   min-height: 200px;
-  align: center;
+  opacity: 1;
 
     h1{
       color: white;
@@ -56,15 +101,20 @@ body{
     }
 }
 
-
-.flash {
-  font-family: Helvetica;
-  background-color: #039f8f;
+.container2 {
+  background-color: #294860;
+  border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
-  border-radius: 20px;
-  width: 30%;
   color: white;
+  font-family: Helvetica;
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+}
+
+.center_div{
+  margin-top: 10em;
 }
 
 .welcome_boxes {
@@ -74,6 +124,18 @@ body{
   margin: 0px auto;
   background-color: white;
   opacity: 0.8;
+  color: $smokeyTopaz;
+  min-width: 150px;
+}
+
+.flash {
+  font-family: Helvetica;
+  background-color: #039f8f;
+  padding: 10px;
+  margin: 30px auto;
+  border-radius: 20px;
+  width: 30%;
+  color: white;
 }
 
 
