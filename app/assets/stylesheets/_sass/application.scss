@@ -1,9 +1,17 @@
-body {
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$nepalGrey: #a2afb8;
+$persianGreen: #00a693;
+$smokeyTopaz: #9300A6;
+$nav-font: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+
+
+body{
   background-image: url("quill.jpg");
   background-size: 100%;
   background-repeat: repeat;
 }
-
 .container2 {
   background-color: #294860;
   border-radius: 20px;
@@ -17,9 +25,9 @@ body {
 }
 
 .container {
-  background-color: #00a693;
+  background-color: $persianGreen;
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: $font-stack;
   border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
@@ -30,19 +38,24 @@ body {
   max-height: 600px;
   min-height: 200px;
   align: center;
+
+    h1{
+      color: white;
+    }
+
+    h2{
+      color: white;
+    }
+
+    h3{
+      color: white;
+    }
+
+    h4{
+      color: white;
+    }
 }
-.container h1 {
-  color: white;
-}
-.container h2 {
-  color: white;
-}
-.container h3 {
-  color: white;
-}
-.container h4 {
-  color: white;
-}
+
 
 .flash {
   font-family: Helvetica;
@@ -63,6 +76,7 @@ body {
   opacity: 0.8;
 }
 
+
 #contact_name {
   opacity: 1;
   font-weight: bold;
@@ -72,27 +86,29 @@ body {
   border-radius: 13px;
   padding: 25px;
   background-color: white;
-  color: #9300a6;
+  color: $smokeyTopaz;
   opacity: 0.6;
   margin: auto;
   width: 60%;
   margin-top: 20px;
-}
-.contact :hover {
-  -webkit-transform: scale(1.007);
-  /* Safari and Chrome */
+
+  :hover {
+      -webkit-transform:scale(1.007); /* Safari and Chrome */
+  }
 }
 
+
 nav {
-  float: left;
+  float:left;
   position: fixed;
 }
+
 
 .left {
   margin-left: 23em;
 }
 
-.top_left {
+.top_left{
   margin-top: -70px;
   margin-left: 23em;
 }

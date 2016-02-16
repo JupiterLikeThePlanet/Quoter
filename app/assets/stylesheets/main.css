@@ -1,0 +1,363 @@
+/*.container {
+  background-color: #294860;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px auto;
+  color: white;
+  font-family: Helvetica;
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+}
+
+.flash {
+  font-family: Helvetica;
+  background-color: #039f8f;
+  padding: 10px;
+  margin: 30px auto;
+  border-radius: 20px;
+  width: 30%;
+  color: white;
+}
+
+.navbar-default {
+  border-color: rgba(34, 34, 34, 0.05);
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: #fff;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: #fff;
+  background-image: url(../images/shakespeare_laptop.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header .header-content {
+  position: relative;
+  width: 100%;
+  padding: 100px 15px;
+  text-align: center;
+}
+header .header-content .header-content-inner h1 {
+  color: #00a693;
+  font: Helvetica, sans-serif;
+}
+header .header-content .header-content-inner h3 {
+  color: #00a693;
+  font: Helvetica, sans-serif;
+}
+
+nav {
+  float: left;
+  position: fixed;
+}
+
+.navbar {
+  border-color: rgba(34, 34, 34, 0.05);
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  text-transform: uppercase;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 700;
+  color: #00A693;
+}
+*/
+
+/*figcaption{
+  font-family: Helvetica;
+}
+
+p {
+  color:#00A693;
+  font-size: 1em;
+  font-family: Helvetica;
+}
+
+
+h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #A2AFB8;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: Helvetica;
+}
+
+h3 {
+  font-family: Helvetica;
+}
+
+h4 {
+  font-family: Helvetica;
+}
+
+li {
+  font-family: Helvetica;
+  color: #A2AFB8;
+}
+
+nav {
+  float:left;
+  position: fixed;
+}
+
+
+.left {
+  margin-left: 23em;
+}
+
+.top_left{
+  margin-top: -70px;
+  margin-left: 23em;
+}
+
+#about{
+  margin-top: -50px;
+  margin-left: 23em;
+}
+
+.align_image{
+  text-align: center;
+}
+
+/***************** Horizontal lines *************/
+/****Under Header*****/
+
+#hline {
+   width:100%;
+   height: 1px;
+   background-color: black;
+ }
+
+#hline1{
+  width:22%;
+  height: 3px;
+  background-color: black;
+}
+
+#hline2 {
+  width:100%;
+  height: 1px;
+  background-color: #A2AFB8;
+}
+
+#hline3{
+  width:100%;
+  height: .5px;
+  background-color: black;
+}
+
+#hline4{
+  margin-top: -3px;
+  margin-left: 22em;
+  width:75%;
+  height: 3px;
+  background-color: black;
+}
+
+.hline5{
+  width:100%;
+  height: 3px;
+  background-color: black;
+}
+
+/****************** For SHARE BUTTONS ******************/
+.share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+display: inline;
+}
+
+
+/********************FOR LINKS*******************/
+a{
+  font-family: Helvetica;
+  color: #00A693;
+  }
+
+a:hover {
+  background-color: #00A693;
+  color:#ffffff;
+  font-family: Helvetica;
+  }
+
+a:link{
+  color:black;
+  font-family: Helvetica;
+  text-decoration: none;
+  }
+
+a:visited{
+  color: #A2AFB8;
+  }
+
+/********************Div boxes*******************/
+
+
+#container_positioning {
+  position: relative;
+  margin-left: 25em;
+}
+
+.container {
+  background-color: #294860;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px auto;
+  position: relative;
+  margin-left: 25em;
+}
+
+.container h1{
+  color: white;
+}
+
+.container h2{
+  color: white;
+}
+
+.container h3{
+  color: white;
+}
+
+.container h4{
+  color: white;
+}
+
+/******************** Borders *******************/
+.solidgold{
+  border-style: groove;
+  border-color: #c5b358;
+}*/
+
+/******************** more *******************/
+.message {
+  list-style-type: none;
+  line-height: 2em;
+}
+
+.login {
+  display: inline-block;
+}
+
+.welcome_boxes {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 300px;
+  margin: 0px auto;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.signup {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.email {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.password{
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#contact_name {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.contact {
+  border-radius: 13px;
+  padding: 25px;
+  background-color: white;
+  opacity: 0.6;
+  margin: auto;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.contact:hover {
+    -webkit-transform:scale(1.007); /* Safari and Chrome */
+}
+
+.navbar {
+  display: inline-block;
+}
+
+#text_button {
+  display: inline-block;
+}
+
+#customTextField {
+  display: none;
+}
+
+.google {
+  margin-bottom: 2em;
+}
+
+#nav_spec {
+  width: 100%;
+  padding: 0px 20em 0px 20em;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  text-align: center;
+}
+
+.login {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  margin-right: 2em;
+  margin-left: 2em;
+  padding: 1em;
+  display: block;
+  border-radius: 9px;
+}
+
+.logout {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  display: block;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-radius: 9px;
+  padding: 1em;
+}
