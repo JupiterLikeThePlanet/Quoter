@@ -15,7 +15,7 @@ div {
 body {
   background-image: url("quill.jpg");
   background-size: 100%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -77,15 +77,10 @@ body {
   color: white;
 }
 
-.container2 {
-  background-color: #294860;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 30px auto;
-  color: white;
-  font-family: Helvetica;
-  height: 300px;
-  width: 200px;
+.outer_container {
+  position: relative;
+  z-index: 1;
+  margin: 100px;
   display: inline-block;
 }
 
@@ -128,6 +123,7 @@ body {
   width: 30%;
   color: white;
   text-align: center;
+  z-index: -1;
 }
 
 #contact_name {

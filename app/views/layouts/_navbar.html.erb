@@ -2,7 +2,6 @@
   <ul>
     <li><%= link_to 'Quoter', root_path, method: :get %><li>
     <li><a href="#">About</a></li>
-    <li><a href="www.github.com/jupiterliketheplanet">Github</a></li>
     <%if current_user%>
       <li><%= link_to 'Home', user_path(current_user), method: :get %><li>
       <li><%= link_to 'Logout', logout_path, method: :delete %><li>
