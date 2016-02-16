@@ -6,6 +6,26 @@
     <%= link_to "< Back", user_url(current_user), method: :get %>
   </div>
 
+  <p>Send your friend a Quote</p>
+
+  <form action="/messages" method="POST">
+
+    <select name="id">
+      <% @contacts.each do |contact| %>
+          <option value="<%= contact.id %>"><%= contact.first_name + " " + contact.last_name %></option>
+      <% end %>
+    </select>
+
+    <select name="api_id">
+      <% @source.each do |source| %>
+        <option value="<%= source.id %>"><%= source.name %></option>
+      <% end %>
+    </select>
+
+    <input type="submit" value="Submit">
+
+  <p>Or send them a Joke!</p>
+
   <form action="/messages" method="POST">
 
     <select name="id">
