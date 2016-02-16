@@ -1,5 +1,17 @@
-<h2>Contacts</h2>
+<div class='margin_header'>
+  <h1>Contacts</h1>
+</div>
+
 <div class ="container center_div" align ='center'>
+  <div >
+  <div align="left">
+    <%= link_to "< Back", user_url(current_user), method: :get %>
+  </div>
+
+  <br>
+
+  <%= link_to "Add Contact", new_contact_path, method: :get %>
+
   <ul>
     <% @contacts.each do |contact| %>
       <div class ="contact">
@@ -10,9 +22,10 @@
     <%end%>
   </ul>
 
-  <%= link_to "Add Contact", new_contact_path, method: :get %>
+
+
 
 </div>
 
-<%= link_to "< Back", user_url(current_user), method: :get %>
+
 

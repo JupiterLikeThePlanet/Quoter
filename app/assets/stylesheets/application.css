@@ -47,7 +47,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
-#nav_bar ul li a a:hover {
+#nav_bar ul li a:hover {
   background-color: #111;
 }
 
@@ -61,7 +61,6 @@ body {
   margin-left: 25em;
   max-width: 700px;
   min-width: 275px;
-  max-height: 600px;
   min-height: 200px;
   opacity: 1;
 }
@@ -90,6 +89,18 @@ body {
   display: inline-block;
 }
 
+.shadow {
+  -webkit-box-shadow: 11px 10px 17px 0px #777777;
+  -moz-box-shadow: 11px 10px 17px 0px #777777;
+  box-shadow: 11px 10px 17px 0px #777777;
+}
+
+.margin_header {
+  position: relative;
+  top: 150px;
+  left: 405px;
+}
+
 .center_div {
   margin-top: 10em;
 }
@@ -106,13 +117,17 @@ body {
 }
 
 .flash {
+  position: relative;
+  top: 100px;
+  left: 50px;
   font-family: Helvetica;
-  background-color: #039f8f;
+  background-color: #9300a6;
   padding: 10px;
   margin: 30px auto;
   border-radius: 20px;
   width: 30%;
   color: white;
+  text-align: center;
 }
 
 #contact_name {
@@ -130,7 +145,7 @@ body {
   width: 60%;
   margin-top: 20px;
 }
-.contact :hover {
+.contact:hover {
   -webkit-transform: scale(1.007);
   /* Safari and Chrome */
 }
@@ -147,4 +162,9 @@ nav {
 .top_left {
   margin-top: -70px;
   margin-left: 23em;
+}
+
+.solidgold {
+  border-style: groove;
+  border-color: #c5b358;
 }

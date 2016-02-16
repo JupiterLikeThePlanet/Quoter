@@ -1,4 +1,6 @@
-<h1>Log In!</h1>
+<div class="margin_header">
+  <h1>Log In!</h1>
+</div>
 
 <div class="container center_div">
 
@@ -17,10 +19,16 @@
         <%= f.submit "Log In", class: 'button tiny radius' %>
       </p>
     <% end %>
+
+  <br>
+
+  <div align="left">
+
+  <p>Don't have an account?</p>
+
+    <%= link_to 'Sign Up', new_user_path, method: :get %>
+  </div>
 </div>
 
-<p>Don't have an account?</p>
 
-<div class="">
-<%= link_to 'Sign Up', new_user_path, method: :get %>
-</div>
+
