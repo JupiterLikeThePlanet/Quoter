@@ -1,7 +1,8 @@
 class ContactsController < ApplicationController
 
   def index
-    @contacts = Contact.all
+
+    @contacts = current_user.contacts.all
   end
 
   def new
@@ -11,7 +12,6 @@ class ContactsController < ApplicationController
   def show
     @contact = Contact.find(params[:id])
   end
-
 
   def create
     @contact = current_user.contacts.create(contact_params)
@@ -26,7 +26,8 @@ class ContactsController < ApplicationController
   end
 
   def edit
-    @contact = Contact.find(params[:id])
+    #@contact = Contact.find(params[:id])
+    @contact = current_user.contacts.find(params[:id])
   end
 
   def update

@@ -3,32 +3,7 @@
 </div>
 
 <div class="container center_div">
-    <%= form_for current_user do |f| %>
-
-    <p>
-      <%= f.label :first_name %>
-      <%= f.text_field :first_name  %>
-    </p>
-
-    <p>
-      <%= f.label :last_name %>
-      <%= f.text_field :last_name %>
-    </p>
-
-    <p>
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-    </p>
-
-    <p>
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-    </p>
-
-    <p>
-      <%= f.submit class: 'button tiny radius' %>
-    </p>
-    <%end%>
-    <br>
-    <%= link_to "< Back", user_url(current_user), method: :get %>
+  <%= render 'form' %>
+  <br>
+  <%= link_to "< Back", user_url(current_user), method: :get %>
 </div>
