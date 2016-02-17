@@ -33274,3 +33274,843 @@ Processing by SessionsController#new as HTML
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 25]]
   Rendered layouts/_navbar.html.erb (0.7ms)
 Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2016-02-17 01:01:55 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZNCCuglmL0i9KlzGVyGtw5Wp+9BjUYErmht8MslZS826jQoLL9h8lACEuSuXFddrAy4tKLnclsAMnCerISgjLw==", "sessions"=>{"email"=>"db@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (17.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "db@gmail.com"]]
+Redirected to http://localhost:3000/users/13
+Completed 302 Found in 1553ms (ActiveRecord: 795.3ms)
+
+
+Started POST "/login" for ::1 at 2016-02-17 01:02:01 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZNCCuglmL0i9KlzGVyGtw5Wp+9BjUYErmht8MslZS826jQoLL9h8lACEuSuXFddrAy4tKLnclsAMnCerISgjLw==", "sessions"=>{"email"=>"db@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "db@gmail.com"]]
+Redirected to http://localhost:3000/users/13
+Completed 302 Found in 143ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/13" for ::1 at 2016-02-17 01:02:01 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 1244ms (Views: 1240.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/13/edit" for ::1 at 2016-02-17 01:02:08 -0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered users/_form.html.erb (62.5ms)
+  Rendered users/edit.html.erb within layouts/application (106.2ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 337ms (Views: 335.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/13" for ::1 at 2016-02-17 01:02:11 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"MyDTqrol15lwPxFDlBhVw/7mE+DgTO12XNJGCq5xfFHtfVsbnJuERc2R9K5ULC9raGHFGDrB+p3KVR2TRgAUsw==", "id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 140ms (Views: 138.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/13" for ::1 at 2016-02-17 01:02:15 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"imSPlLkVi6zo4V+KXLSIPsM3ng1P+HhZ0PX8HFO7mY5UOQcln6vYcFVPumecgPKWVbBI9ZV1b7JGcqeFu8rxbA==", "id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered users/show.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:02:25 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"+5CyTMzLR6FDi1kMdEU7Pf1RbHyu/6T/aplb9oAoKoglzTr96nUUff4lvOG0cUGVa9a6hHRysxT8HgBvaFlCag=="}
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 681ms (Views: 680.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/13" for ::1 at 2016-02-17 01:02:29 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:02:35 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/index" for ::1 at 2016-02-17 01:06:24 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 20ms (ActiveRecord: 3.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=index):
+  app/controllers/users_controller.rb:8:in `show'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (288.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (219.3ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (547.2ms)
+
+
+Started GET "/users/" for ::1 at 2016-02-17 01:06:38 -0800
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (67.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (335.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (108.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (216.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:39:03 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (10.1ms)
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"welcome"} missing required keys: [:id]):
+    1: <div id="nav_bar">
+    2:   <ul>
+    3:     <li><%= link_to 'Quoter', root_path, method: :get %><li>
+    4:     <li><%= link_to 'About', welcome_path, method: :get %></li>
+    5:     <%if current_user%>
+    6:       <li><%= link_to 'Home', user_path(current_user), method: :get %><li>
+    7:       <li><%= link_to 'Logout', logout_path, method: :delete %><li>
+  app/views/layouts/_navbar.html.erb:4:in `_app_views_layouts__navbar_html_erb___313210627417771543_70346457667580'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__2389631870039708742_70346419660280'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (35.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (246.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (139.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (307.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:40:02 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (10.4ms)
+Completed 500 Internal Server Error in 1461ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"welcome"} missing required keys: [:id]):
+    1: <div id="nav_bar">
+    2:   <ul>
+    3:     <li><%= link_to 'Quoter', root_path, method: :get %><li>
+    4:     <li><%= link_to 'About', welcome_path, method: :get %></li>
+    5:     <%if current_user%>
+    6:       <li><%= link_to 'Home', user_path(current_user), method: :get %><li>
+    7:       <li><%= link_to 'Logout', logout_path, method: :delete %><li>
+  app/views/layouts/_navbar.html.erb:4:in `_app_views_layouts__navbar_html_erb___313210627417771543_70346457667580'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__2389631870039708742_70346419660280'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (34.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (269.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (184.1ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (438.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:40:13 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (5.7ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"welcome"} missing required keys: [:id]):
+    1: <div id="nav_bar">
+    2:   <ul>
+    3:     <li><%= link_to 'Quoter', root_path, method: :get %><li>
+    4:     <li><%= link_to 'About', welcome_path, method: :get %></li>
+    5:     <%if current_user%>
+    6:       <li><%= link_to 'Home', user_path(current_user), method: :get %><li>
+    7:       <li><%= link_to 'Logout', logout_path, method: :delete %><li>
+  app/views/layouts/_navbar.html.erb:4:in `_app_views_layouts__navbar_html_erb___313210627417771543_70346457667580'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__2389631870039708742_70346419660280'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (43.3ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (139.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (215.7ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:48:07 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (33.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_navbar.html.erb (51.3ms)
+Completed 500 Internal Server Error in 3773ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"welcome"} missing required keys: [:id]):
+    1: <div id="nav_bar">
+    2:   <ul>
+    3:     <li><%= link_to 'Quoter', root_path, method: :get %><li>
+    4:     <li><%= link_to 'About', welcome_path, method: :get %></li>
+    5:     <%if current_user%>
+    6:       <li><%= link_to 'Home', user_path(current_user), method: :get %><li>
+    7:       <li><%= link_to 'Logout', logout_path, method: :delete %><li>
+  app/views/layouts/_navbar.html.erb:4:in `_app_views_layouts__navbar_html_erb__3796604218574529341_70253420992220'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___611320124236913314_70253476710620'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (208.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (3774.2ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (4005.4ms)
+
+
+Started GET "/login" for ::1 at 2016-02-17 01:49:58 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (882.2ms)
+  Rendered layouts/_navbar.html.erb (4.6ms)
+Completed 500 Internal Server Error in 1513ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"welcome"} missing required keys: [:id]):
+    1: <div id="nav_bar">
+    2:   <ul>
+    3:     <li><%= link_to 'Quoter', root_path, method: :get %><li>
+    4:     <li><%= link_to 'About', welcome_path, method: :get %></li>
+    5:     <%if current_user%>
+    6:       <li><%= link_to 'Home', user_path(current_user), method: :get %><li>
+    7:       <li><%= link_to 'Logout', logout_path, method: :delete %><li>
+  app/views/layouts/_navbar.html.erb:4:in `_app_views_layouts__navbar_html_erb__3796604218574529341_70253420992220'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___611320124236913314_70253476710620'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (213.3ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (105.8ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (258.7ms)
+
+
+Started GET "/login" for ::1 at 2016-02-17 01:51:16 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (75.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (1123.8ms)
+Completed 200 OK in 1606ms (Views: 1289.0ms | ActiveRecord: 316.7ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-17 01:51:19 -0800
+
+
+Started GET "/login" for ::1 at 2016-02-17 01:56:44 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (14.4ms)
+Completed 200 OK in 7929ms (Views: 7921.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:59:20 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"1xvoEmMqugnOzcmV30gHRcHqFxzTvUe0xPSzQkOQhUQJRmCjRZTp1XNjLHgffH3tV23B5AkwUF9Sc+jbq+Htpg=="}
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (10.7ms)
+Completed 200 OK in 1357ms (Views: 1351.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-17 01:59:41 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 142ms (Views: 140.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 01:59:42 -0800
+
+
+Started GET "/" for ::1 at 2016-02-17 02:00:24 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (8.5ms)
+Completed 200 OK in 997ms (Views: 992.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:00:27 -0800
+
+
+Started GET "/" for ::1 at 2016-02-17 02:00:41 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:00:41 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:00:41 -0800
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:00:41 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:00:41 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:42 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:42 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:42 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:42 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:00:42 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:00:42 -0800
+
+
+Started GET "/" for ::1 at 2016-02-17 02:03:35 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (29.1ms)
+Completed 200 OK in 929ms (Views: 923.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:03:36 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:03:37 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:03:37 -0800
+
+
+Started GET "/" for ::1 at 2016-02-17 02:05:24 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (13.7ms)
+Completed 200 OK in 670ms (Views: 662.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:05:26 -0800
+
+
+Started GET "/" for ::1 at 2016-02-17 02:07:38 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (15.2ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (7.6ms)
+Completed 200 OK in 1134ms (Views: 1126.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:07:40 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:07:40 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:07:40 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:07:40 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:07:41 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:07:41 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:07:41 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:07:41 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:07:41 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:07:41 -0800
+
+
+Started GET "/" for ::1 at 2016-02-17 02:19:26 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (105.0ms)
+Completed 200 OK in 1712ms (Views: 1658.2ms | ActiveRecord: 51.1ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:19:29 -0800
+
+
+Started GET "/about" for ::1 at 2016-02-17 02:19:31 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"ANZkUcjpMQ8l6nlWrqwi2BVHdXGSf1PUyHP2rcVLqPrei+zg7ldi05hEnLtumFhwg8CjiUjyRD9e9K00LTrAGA=="}
+  Rendered about/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (2.1ms)
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for ::1 at 2016-02-17 02:23:36 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/bradleyjupiterbaudot/Desktop/DBC/curriculum/Quoter/app/views/about/index.html.erb:61: syntax error, unexpected '<', expecting keyword_end
+...   <li>account_sid: '.freeze; <%= ENV["TWILIO_SID"];@output_...
+...                               ^):
+  app/views/about/index.html.erb:61: syntax error, unexpected '<', expecting keyword_end
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (191.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (139.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (383.3ms)
+
+
+Started GET "/about" for ::1 at 2016-02-17 02:26:21 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (16.5ms)
+Completed 200 OK in 1310ms (Views: 1300.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:26:23 -0800
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:26:23 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:26:23 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:26:23 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:26:24 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:26:24 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:26:24 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:26:24 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:26:24 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:26:24 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:26:24 -0800
+
+
+Started GET "/about" for ::1 at 2016-02-17 02:27:20 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (2.0ms)
+Completed 200 OK in 732ms (Views: 730.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:27:21 -0800
+
+
+Started GET "/about" for ::1 at 2016-02-17 02:28:42 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (9.7ms)
+Completed 200 OK in 980ms (Views: 975.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:28:44 -0800
+
+
+Started GET "/about" for ::1 at 2016-02-17 02:29:10 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 194ms (Views: 192.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/application.self-0aa191915e253f16a76ed8794d215dcf03b0b2b011b8caed2e56b92654509912.css?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-17 02:29:11 -0800
