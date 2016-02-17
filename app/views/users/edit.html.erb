@@ -1,34 +1,24 @@
-<div class="margin_header">
-  <h1>Edit User</h1>
-</div>
+<%if current_user.id != @user.id%>
+  <div class="margin_header">
+    <h1>Going somewhere?</h1>
+  </div>
+  <div class="container_not_you" align ='center'>
+    <h3>This is not you! Either go back </h3>
+      <%= link_to "< Back", user_url(current_user), method: :get %>
+    <h3>Or log out and sign in under your accout</h3>
+      <%= link_to 'Login', login_path, method: :get, id: 'loginLink', class: 'login'%>
+  </div>
 
-<div class="container center_div">
-    <%= form_for current_user do |f| %>
+<%else%>
 
-    <p>
-      <%= f.label :first_name %>
-      <%= f.text_field :first_name  %>
-    </p>
+  <div class="margin_header">
+    <h1>Edit User</h1>
+  </div>
 
-    <p>
-      <%= f.label :last_name %>
-      <%= f.text_field :last_name %>
-    </p>
-
-    <p>
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-    </p>
-
-    <p>
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-    </p>
-
-    <p>
-      <%= f.submit class: 'button tiny radius' %>
-    </p>
-    <%end%>
+  <div class="container center_div">
+    <%= render 'form' %>
     <br>
     <%= link_to "< Back", user_url(current_user), method: :get %>
-</div>
+  </div>
+
+<%end%>

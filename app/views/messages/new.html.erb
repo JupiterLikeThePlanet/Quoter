@@ -19,21 +19,10 @@
     <p>Send a Quote or a Joke</p>
       <select name="api_id">
           <% @source.each do |source| %>
-            <% unless source.id < 4 %>
-              <option value="<%= source.id %>"><%= source.name %></option>
-            <% end %>
+            <option value="<%= source.id %>"><%= source.name %></option>
           <%end%>
       </select>
-    -
-    <select name="api_id">
-        <% @source.each do |source| %>
-          <% unless source.id > 4 %>
-            <option value="<%= source.id %>"><%= source.name %></option>
-          <% end %>
-        <%end%>
-    </select>
 
-    <p>Off it goes!</p>
     <input type="submit" value="Submit">
 
 
