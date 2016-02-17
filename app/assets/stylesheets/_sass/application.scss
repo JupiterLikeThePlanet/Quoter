@@ -133,17 +133,16 @@ body{
 
 
 .margin_header {
-  position: relative;
+  position: static;
+  color: black;
+  padding: 10px;
+  margin: 30px auto;
+  margin-bottom: -18em;
   margin-top: 10em;
-  margin-bottom: -10em;
-
-  padding: 0px;
-  border: 0px;
-if body >= 50% {
-  margin-left: 22em;
-} else {
-  margin-left: 0em;
-}
+  max-width: 700px;
+  min-width: 275px;
+  max-height: 500px;
+  min-height: 200px;
 }
 
 .center_div{
