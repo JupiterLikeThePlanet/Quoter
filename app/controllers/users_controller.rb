@@ -1,9 +1,12 @@
 class UsersController < ApplicationController
-  #before_action :logged_in_user
   before_action :logged_in_user, except: [:new, :create]
+  # before_action do
+  #    authorize current_user
+  # end
 
   def show
       @user = User.find(params[:id])
+      # authorize @user, :show?
     #show_page unless current_user.id != @user.id
   end
 

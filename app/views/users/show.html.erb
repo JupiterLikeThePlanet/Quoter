@@ -1,29 +1,42 @@
-<div class="margin_header">
-  <h1>Oh good, you're here</h1>
-</div>
-<div class="container center_div" align ='center'>
-  <p>USER: <%= @user.first_name %> <%= @user.last_name %> </p>
-
-  <p>EMAIL: <%= @user.email %></p>
-  <% if current_user %>
-    <%= link_to 'Edit User', edit_user_path(current_user), class: 'button tiny radius' %> |
-    <%= link_to 'Delete User', user_path(@user), method: :delete, data: { confirm: "You sure?"}, class: 'button tiny radius'%>
-  <%end %>
-
-  <br>
-  <br>
-
-  <div class="welcome_boxes">
-    <%= link_to 'Contacts', contacts_path, method: :get %>
+<%if current_user.id != @user.id%>
+  <div class="margin_header">
+    <h1>Going somewhere?</h1>
+  </div>
+  <div class="container_not_you" align ='center'>
+    <h3>This is not you! Either go back </h3>
+      <%= link_to "< Back", user_url(current_user), method: :get %>
+    <h3>Or log out and sign in under your accout</h3>
+      <%= link_to 'Login', login_path, method: :get, id: 'loginLink', class: 'login'%>
   </div>
 
+<%else%>
 
-  <br>
+  <div class="margin_header">
+    <h1>Oh good, you're here</h1>
+  </div>
+  <div class="container center_div" align ='center'>
+    <p>USER: <%= @user.first_name %> <%= @user.last_name %> </p>
 
-  <div class="welcome_boxes">
-    <%= link_to 'Messages', new_message_path, method: :get %>
+    <p>EMAIL: <%= @user.email %></p>
+    <% if current_user %>
+      <%= link_to 'Edit User', edit_user_path(current_user), class: 'button tiny radius' %> |
+      <%= link_to 'Delete User', user_path(@user), method: :delete, data: { confirm: "You sure?"}, class: 'button tiny radius'%>
+    <%end %>
+
+    <br>
+    <br>
+
+    <div class="welcome_boxes">
+      <%= link_to 'Contacts', contacts_path, method: :get %>
+    </div>
+
+
+    <br>
+
+    <div class="welcome_boxes">
+      <%= link_to 'Messages', new_message_path, method: :get %>
+    </div>
+
   </div>
 
-</div>
-
-
+<%end%>

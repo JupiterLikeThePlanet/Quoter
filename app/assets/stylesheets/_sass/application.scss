@@ -70,6 +70,9 @@ body{
 
 
 .container {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
   background-color: $persianGreen;
   color: white;
   border-radius: 20px;
@@ -102,17 +105,28 @@ body{
     }
 }
 
+.container_not_you {
+  background-color: $persianGreen;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px auto;
+  position: relative;
+  margin-top: 10em;
+  margin-left: 25em;
+  max-width: 700px;
+  min-width: 275px;
+  max-height: 500px;
+  min-height: 200px;
+  overflow: scroll;
+  opacity: 1;
+}
+
 .outer_container {
   position: relative;
   z-index: 1;
   margin: 100px;
   display: inline-block;
-}
-
-.shadow {
-  -webkit-box-shadow: 11px 10px 17px 0px rgba(119,119,119,1);
-  -moz-box-shadow: 11px 10px 17px 0px rgba(119,119,119,1);
-  box-shadow: 11px 10px 17px 0px rgba(119,119,119,1);
 }
 
 .margin_header{
