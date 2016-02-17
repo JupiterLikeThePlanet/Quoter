@@ -12,6 +12,7 @@
     </div>
   <% end %>
 
+<div class="label">
 <p>
   <%= f.label :first_name %>
   <%= f.text_field :first_name  %>
@@ -33,6 +34,14 @@
 </p>
 
 <p>
+  <%= f.label :password_confirmation, "Confirm" %>
+  <%= f.password_field :password_confirmation %>
+</p>
+
+<p>
   <%= f.submit class: 'button tiny radius' %>
 </p>
+
+</div>
+
 <%end%>

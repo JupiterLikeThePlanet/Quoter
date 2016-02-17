@@ -51,13 +51,13 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.destroy
     flash[:success] = "User deleted"
-    redirect_to users_path
+    redirect_to root_path
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_digest)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :password_digest)
   end
 
   def logged_in_user

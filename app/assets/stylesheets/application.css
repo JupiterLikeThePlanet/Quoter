@@ -136,9 +136,12 @@ body {
 }
 
 .flash {
+  -webkit-box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.23);
+  box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.23);
   position: relative;
   top: 100px;
-  left: 50px;
+  left: 20px;
   font-family: Helvetica;
   background-color: #9300a6;
   padding: 10px;
@@ -187,4 +190,11 @@ nav {
 .solidgold {
   border-style: groove;
   border-color: #c5b358;
+}
+
+.label {
+  max-width: 15em;
+  min-width: 2em;
+  margin-right: 1em;
+  display: block;
 }
