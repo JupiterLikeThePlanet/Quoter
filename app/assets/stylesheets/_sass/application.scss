@@ -26,8 +26,9 @@ div {
 
 body{
   background-image: url("quill.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -78,8 +79,9 @@ body{
   border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
-  position: relative;
-  margin-left: 25em;
+  margin-bottom: 1em;
+  position: static;
+
   max-width: 700px;
   min-width: 275px;
   max-height: 500px;
@@ -111,9 +113,9 @@ body{
   border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
-  position: relative;
+  margin-bottom: 1em;
+  position: static;
   margin-top: 10em;
-  margin-left: 25em;
   max-width: 700px;
   min-width: 275px;
   max-height: 500px;
@@ -129,10 +131,19 @@ body{
   display: inline-block;
 }
 
-.margin_header{
+
+.margin_header {
   position: relative;
-  top: 150px;
-  left: 405px;
+  margin-top: 10em;
+  margin-bottom: -10em;
+
+  padding: 0px;
+  border: 0px;
+if body >= 50% {
+  margin-left: 22em;
+} else {
+  margin-left: 0em;
+}
 }
 
 .center_div{
