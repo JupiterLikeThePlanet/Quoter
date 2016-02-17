@@ -6,12 +6,13 @@ Rails.application.routes.draw do
   #root 'welcome#index'
   root 'welcome#index'
   resources :welcome, only: [:index]
+  resources :about, only: [:index]
   resources :users, except: [:index]
   #resource :sessions, only: [:new, :create, :destroy]
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
-  resources :messages, only: [:new]
+  resources :messages, only: [:new, :create]
   resources :contacts, except: [:show]
 
 

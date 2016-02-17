@@ -1,13 +1,8 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: [:new, :create]
-  # before_action do
-  #    authorize current_user
-  # end
 
   def show
-      @user = User.find(params[:id])
-      # authorize @user, :show?
-    #show_page unless current_user.id != @user.id
+    @user = User.find(params[:id])
   end
 
   def index
@@ -19,7 +14,6 @@ class UsersController < ApplicationController
   end
 
   def edit
-    #@user = User.find(params[:id])
     @user = current_user
   end
 
@@ -37,7 +31,6 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    #if @user.update(user_params)
     if @user.update_attributes(user_params)
       flash[:success] = "Info updated"
       redirect_to user_url(@user)
@@ -51,13 +44,13 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.destroy
     flash[:success] = "User deleted"
-    redirect_to users_path
+    redirect_to root_path
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_digest)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :password_digest)
   end
 
   def logged_in_user

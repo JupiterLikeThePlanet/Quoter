@@ -1,0 +1,78 @@
+
+<div class="container center_div">
+  <div align='center'>
+    <header >
+        <h1>Quoter</h1>
+        <hr>
+    </header>
+  </div>
+
+  <h3>What it is Quoter?</h3>
+
+  <p>Quoter is a web app that allows users to store a list of contacts and text their friends a 'quote of the day' or jokes.</p>
+
+  <p>The app was built on the Ruby on Rails framework, PostgreSQL database, Active Record, SASS and uses several API's:</p>
+    <ul>
+      <li> Data: 'They Said So', 'Yo Momma', 'The Internet Chuck Norris Database'</li>
+      <li> SMS Messaging: Twilio </li>
+   </ul>
+
+  <p>The main functionality lies in the Message controller, which pulls data from one API and sends it in the form of a SMS message using Twilio.</p>
+
+  <h3>Can I download this app & play with the code?</h3>
+
+    <p>Yes! Here are the installation instructions (BTW, this code runs in a Mac environment).</p>
+
+    <ol>
+      <li> git clone: Open your command line and navigate to the directory you want to save Quoter. Type 'git clone https://github.com/JupiterLikeThePlanet/Quoter.git'</li>
+
+      <br>
+
+      <li>bundle install: cd into the Quoter directory and type 'bundle install' in the command line</li>
+
+      <br>
+
+      <li>Type 'rake db:create'</li>
+
+      <br>
+
+      <li>Type 'rake db:migrate'</li>
+
+      <br>
+
+      <li>Type 'rake db:seed' : This will create 'Resources', which pull json objects from three of the API's to be utilized by the Twilio API.</li>
+
+      <br>
+
+      <li>Sign up or sign in to Twilio and retrieve your API & SID keys.</li>
+
+      <br>
+
+      <li>In the .env file, enter:
+        <ul>
+          <li>TWILIO_SID=*Your SID key here*</li>
+          <li>TWILIO_AUTH_TOKEN=*Your SID key here*</li>
+        </ul>
+
+      <br>
+
+      <li>In config/secrets.yml, add the following under the secret_key_base in the development and production areas:
+        <ul>
+          <li>account_sid: >%=ENV["TWILIO_SID"]%>
+          </li>
+          <li>auth_token: >%=ENV["TWILIO_AUTH_TOKEN"]%></li>
+        </ul>
+      *Note* For the sake of not displaying the keys, the first '>' before the ENV variables had to be faced that way.  Be sure to invert that to '<' to get the code to work.
+      </li>
+
+      <br>
+
+      <li>Type 'rails server' or 'rails s' to launch the server</li>
+
+      <br>
+
+      <li>Go to your web browser and type 'localhost:3000'. This will take you to the Quoter Welcome Page.</li>
+
+    </ul>
+
+</div>

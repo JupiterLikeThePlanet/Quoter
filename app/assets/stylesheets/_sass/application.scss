@@ -26,8 +26,9 @@ div {
 
 body{
   background-image: url("quill.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -78,8 +79,9 @@ body{
   border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
-  position: relative;
-  margin-left: 25em;
+  margin-bottom: 1em;
+  position: static;
+
   max-width: 700px;
   min-width: 275px;
   max-height: 500px;
@@ -111,9 +113,9 @@ body{
   border-radius: 20px;
   padding: 10px;
   margin: 30px auto;
-  position: relative;
+  margin-bottom: 1em;
+  position: static;
   margin-top: 10em;
-  margin-left: 25em;
   max-width: 700px;
   min-width: 275px;
   max-height: 500px;
@@ -129,10 +131,18 @@ body{
   display: inline-block;
 }
 
-.margin_header{
-  position: relative;
-  top: 150px;
-  left: 405px;
+
+.margin_header {
+  position: static;
+  color: black;
+  padding: 10px;
+  margin: 30px auto;
+  margin-bottom: -18em;
+  margin-top: 10em;
+  max-width: 700px;
+  min-width: 275px;
+  max-height: 500px;
+  min-height: 200px;
 }
 
 .center_div{
@@ -151,9 +161,12 @@ body{
 }
 
 .flash {
+  -webkit-box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.23);
+  -moz-box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.23);
+  box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.23);
   position: relative;
   top: 100px;
-  left: 50px;
+  left: 20px;
   font-family: Helvetica;
   background-color: $smokeyTopaz;
   padding: 10px;
@@ -206,3 +219,10 @@ nav {
   border-style: groove;
   border-color: #c5b358;
   }
+
+.label{
+  max-width: 15em;
+  min-width: 2em;
+  margin-right: 1em;
+  display: block;
+}

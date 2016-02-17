@@ -1,7 +1,6 @@
 class ContactsController < ApplicationController
 
   def index
-
     @contacts = current_user.contacts.all
   end
 
@@ -26,7 +25,6 @@ class ContactsController < ApplicationController
   end
 
   def edit
-    #@contact = Contact.find(params[:id])
     @contact = current_user.contacts.find(params[:id])
   end
 
