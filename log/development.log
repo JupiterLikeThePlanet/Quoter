@@ -47038,3 +47038,13 @@ Processing by MessagesController#new as HTML
   Rendered messages/new.html.erb within layouts/application (2.0ms)
   Rendered layouts/_navbar.html.erb (0.4ms)
 Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for ::1 at 2016-02-17 12:54:23 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"qePrho0fQ6LAUBnJpHAZadK8Qpd9RB0tH6KjT4H33jR3vmM3q6EQfn3+/CRkRGPBRDuUb6fJCsaJJfjWaYa21g==", "id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 680ms (Views: 662.9ms | ActiveRecord: 1.0ms)
