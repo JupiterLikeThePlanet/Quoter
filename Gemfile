@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'pundit'
 
+gem 'heroku'
 gem 'heroku-api', '~> 0.3.23'
 gem 'launchy', '~> 2.4.3'
 gem 'multi_json', '~> 1.11.2'
