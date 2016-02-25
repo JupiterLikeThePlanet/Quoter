@@ -47048,3 +47048,326 @@ Processing by UsersController#show as HTML
   Rendered users/show.html.erb within layouts/application (2.1ms)
   Rendered layouts/_navbar.html.erb (1.3ms)
 Completed 200 OK in 680ms (Views: 662.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-24 15:27:53 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (267.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (39.7ms)
+  [1m[35mUser Load (105.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (501.9ms)
+Completed 200 OK in 6507ms (Views: 6112.4ms | ActiveRecord: 280.1ms)
+
+
+Started GET "/assets/application.self-100ff5cdb5cbf327724308214d143574b946abed0324469a710c84dac35c969c.css?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-24 15:28:31 -0800
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-24 15:28:32 -0800
+
+
+Started GET "/" for ::1 at 2016-02-25 00:41:49 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (112.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (27.5ms)
+  [1m[35mUser Load (305.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (519.1ms)
+Completed 200 OK in 1551ms (Views: 1156.7ms | ActiveRecord: 352.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/application.self-100ff5cdb5cbf327724308214d143574b946abed0324469a710c84dac35c969c.css?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/application.self-e136106f88dfc7dd91a1b188a692ec9c479dba1ab958e1b28f01ffe0c808c635.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:41:56 -0800
+
+
+Started GET "/users/new" for ::1 at 2016-02-25 00:42:02 -0800
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"CeKhaDNv/7LwiO74/7vMotVE6v2G2NRga5hk8Hwxe6RbCQecNXae+u5iI1Tnc0fkeFpm/6ft9d9dC9xE+ZtZWw=="}
+  Rendered users/_form.html.erb (1592.9ms)
+  Rendered users/new.html.erb within layouts/application (1626.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 1845ms (Views: 1675.9ms | ActiveRecord: 161.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 00:42:06 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"3nOELN9qTrXQXpM8zFdtDvgW/vUd34fnz8Fu7mGXfQuMmCLY2XMv/c60XpDUn+ZIVQhy9zzqplj5UtZa5D1f9A=="}
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2016-02-25 00:42:08 -0800
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"ePzr0PNWzBzg18ayVMIrbMUC+TBn9rHJ1gCw38NER1kqF00k9U+tVP49Cx5MCqAqaBx1MkbDkHbgkwhrRu5lpg=="}
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2016-02-25 00:42:31 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GvKHDjDcMcU9wSnn7JCQKwu6xVwe1AQYVDK/L+tvILpIGSH6NsVQjSMr5Ev0WBttpqRJXj/hJadioQebbsUCRQ==", "sessions"=>{"email"=>"dummy@user.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (63.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "dummy@user.com"]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 266ms (ActiveRecord: 63.5ms)
+
+
+Started GET "/users/1" for ::1 at 2016-02-25 00:42:32 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-25 00:42:34 -0800
+Processing by ContactsController#index as HTML
+  Parameters: {"authenticity_token"=>"AfNqwfmvQxuo24LheWUcl9fI1tAtv0dZao6xZFW0kutTGMw1/7YiU7YxT01hrZfRetZa0gyKZuZcHQnQ0B6wFA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (24.8ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1  [["user_id", 1]]
+  Rendered contacts/index.html.erb within layouts/application (66.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 264ms (Views: 97.4ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:42:34 -0800
+
+
+Started GET "/contacts/1/edit" for ::1 at 2016-02-25 00:42:36 -0800
+Processing by ContactsController#edit as HTML
+  Parameters: {"authenticity_token"=>"4paa7oESVB42AvCDMk1965lfkD6Skh/MZl+bh7OknwawfTwahws1VijoPS8qhfatNEEcPLOnPnNQzCMzNg69+Q==", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (25.9ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1 AND "contacts"."id" = $2 LIMIT 1  [["user_id", 1], ["id", 1]]
+  Rendered contacts/edit.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 52.0ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:42:36 -0800
+
+
+Started GET "/contacts" for ::1 at 2016-02-25 00:42:52 -0800
+Processing by ContactsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1  [["user_id", 1]]
+  Rendered contacts/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 169ms (Views: 166.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contacts/new" for ::1 at 2016-02-25 00:42:55 -0800
+Processing by ContactsController#new as HTML
+  Parameters: {"authenticity_token"=>"1MUxc9nM7Y4Uj52tCAo6rx4rb9RsgPe2vw4L04dSIOWGLpeH39WMxgplUAEQwrHpszXj1k211gmJnbNnAvgCGg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:42:55 -0800
+
+
+Started POST "/contacts" for ::1 at 2016-02-25 00:43:13 -0800
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"durlqQ8csNq/xOvclkTbwah7uNcAEqhzRa1ZmN8CkkIkAUNdCQXRkqEuJnCOjFCHBWU01SEnicxzPuEsWqiwvQ==", "contact"=>{"first_name"=>"vicki", "last_name"=>"huang", "number"=>"2013124756"}, "commit"=>"Create Contact"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (14.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (78.3ms)[0m  INSERT INTO "contacts" ("first_name", "last_name", "number", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["first_name", "vicki"], ["last_name", "huang"], ["number", "2013124756"], ["user_id", 1], ["created_at", "2016-02-25 08:43:13.419887"], ["updated_at", "2016-02-25 08:43:13.419887"]]
+  [1m[36m (984.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 1115ms (ActiveRecord: 1078.3ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-25 00:43:14 -0800
+Processing by ContactsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contacts/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 113ms (Views: 110.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:43:14 -0800
+
+
+Started GET "/users/1" for ::1 at 2016-02-25 00:43:16 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"wgOA2+zf0awbiVn7pqtgDuZc3Y4J5DwdgO12HOJ90nuQ6CYv6saw5AVjlFe+Y+tIS0JRjCjRHaK2fs6oZ9fwhA==", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:43:17 -0800
+
+
+Started GET "/messages/new" for ::1 at 2016-02-25 00:43:18 -0800
+Processing by MessagesController#new as HTML
+  Parameters: {"authenticity_token"=>"Tx8hOaEX4tstIZCZv3tebXHEQvL/Co6dm7oWv5SKiD4d9IfNpw6DkzPLXTWns9Ur3NrO8N4/ryKtKa4LESCqwQ=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mResource Load (27.3ms)[0m  SELECT "resources".* FROM "resources"
+  Rendered messages/new.html.erb within layouts/application (42.0ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 143ms (Views: 85.7ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:43:19 -0800
+
+
+Started POST "/messages" for ::1 at 2016-02-25 00:43:24 -0800
+Processing by MessagesController#create as HTML
+  Parameters: {"id"=>"2", "api_id"=>"1"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mResource Load (16.7ms)[0m  SELECT  "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/messages/new
+Completed 302 Found in 1779ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/messages/new" for ::1 at 2016-02-25 00:43:25 -0800
+Processing by MessagesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1  [["user_id", 1]]
+  [1m[36mResource Load (0.2ms)[0m  [1mSELECT "resources".* FROM "resources"[0m
+  Rendered messages/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:43:26 -0800
+
+
+Started POST "/messages" for ::1 at 2016-02-25 00:43:44 -0800
+Processing by MessagesController#create as HTML
+  Parameters: {"id"=>"1", "api_id"=>"3"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mResource Load (0.2ms)[0m  [1mSELECT  "resources".* FROM "resources" WHERE "resources"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 620ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `joke' for #<MessagesController:0x007f9b1d6d3430>):
+  app/controllers/messages_controller.rb:24:in `eval'
+  app/controllers/messages_controller.rb:24:in `eval'
+  app/controllers/messages_controller.rb:24:in `create'
+
+
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (214.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (120.0ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/bradleyjupiterbaudot/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (296.1ms)
+
+
+Started GET "/users/1" for ::1 at 2016-02-25 00:44:16 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"/6m3UyVgl2lQy3w/KhgPcPWqT7g7A5ArmnLyP+9wgaytQhGnI3n2IU4hsZMy0IQ2WLTDuho2sZSs4UqLatqjUw==", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:44:16 -0800
+
+
+Started GET "/users/1" for ::1 at 2016-02-25 00:44:20 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"/6m3UyVgl2lQy3w/KhgPcPWqT7g7A5ArmnLyP+9wgaytQhGnI3n2IU4hsZMy0IQ2WLTDuho2sZSs4UqLatqjUw==", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:44:20 -0800
+
+
+Started GET "/contacts" for ::1 at 2016-02-25 00:44:21 -0800
+Processing by ContactsController#index as HTML
+  Parameters: {"authenticity_token"=>"61K66H0GxHxd+PbiCKEdMNfwkPQNsSa1dn91AjStEPa5uRwcex+lNEMSO04QaZZ2eu4c9iyEBwpA7M22sQcyCQ=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contacts/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2016-02-25 00:44:21 -0800

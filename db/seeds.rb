@@ -3,9 +3,9 @@
 #################################################
 Resource.create(name: "Quote of the Day", link: "http://quotes.rest/qod.json", access: "quote['contents']['quotes'][0]['quote']")
 
-Resource.create(name: "Yo Mamma", link: "http://api.yomomma.info/", access: "joke['joke']")
+Resource.create(name: "Yo Mamma", link: "http://api.yomomma.info/", access: "quote['joke']")
 
-Resource.create(name: "Chuck Norris", link: "http://api.icndb.com/jokes/random?exclude=Array", access: "joke['value']['joke']")
+Resource.create(name: "Chuck Norris", link: "http://api.icndb.com/jokes/random?exclude=Array", access: "quote['value']['joke']")
 
 #################################################
 #if you'd like to seed fake data for your own testing, use the below template to do so
