@@ -47819,3 +47819,14 @@ Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/assets/quill.jpg" for ::1 at 2018-01-17 00:37:03 -0800
+
+
+Started GET "/" for ::1 at 2018-01-17 09:59:40 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navbar.html.erb (8.0ms)
+Completed 200 OK in 76ms (Views: 67.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-01-17 09:59:40 -0800
