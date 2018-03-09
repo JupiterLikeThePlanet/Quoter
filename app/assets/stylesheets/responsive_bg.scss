@@ -1,0 +1,71 @@
+@function u-image-url($UUID, $filename, $new-size, $resize-type: "resize", $align: "", $quality: "normal") {
+  $CDN_URL: "https://ucarecdn.com/";
+
+  $quality-op: "-/quality/" + $quality + "/";
+
+  $size-op: "-/" + $resize-type + "/" + $new-size + "/";
+
+  @if $align {
+    $size-op: $size-op + $align + "/";
+  }
+
+  @return $CDN_URL + $UUID + "/" + $size-op + $quality-op + $filename;
+}
+
+@mixin background-image-x($img-1x, $img-2x) {
+  background-image: url($img-1x);
+  background-image: image-set(url($img-1x) 1x, url($img-2x) 2x);
+}
+
+#MyResponsiveImage {
+  background-color: #000;
+  backround-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "fallback.jpg", "1000x"));
+
+  @media screen and (orientation: portrait) {
+    & {
+      $img-1x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "1.jpg", "450x800", "scale_crop", "center");
+      $img-2x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "2.jpg", "900x1600", "scale_crop", "center", "lightest");
+
+      @include background-image-x($img-1x, $img-2x)
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    & {
+      $img-1x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "3.jpg", "450x");
+      $img-2x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "4.jpg", "900x", "resize", null, "lightest");
+
+      @include background-image-x($img-1x, $img-2x)
+    }
+  }
+
+  @media screen and (min-width: 450px) {
+    & {
+      $img-1x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "5.jpg", "750x");
+      $img-2x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "6.jpg", "1500x", "resize", null, "lightest");
+
+      @include background-image-x($img-1x, $img-2x)
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    & {
+      $img-1x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "7.jpg", "1000x");
+      $img-2x: u-image-url("4ff4b0cf-d47b-48ec-9836-e6fff96924a0", "8.jpg", "2000x", "resize", null, "lightest");
+
+      @include background-image-x($img-1x, $img-2x)
+    }
+  }
+}
+
+
+html, body {
+  margin: 0;
+}
+
+#MyResponsiveImage {
+  height: 450px;
+}

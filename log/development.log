@@ -48014,3 +48014,1601 @@ Processing by AboutController#index as HTML
   [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
   Rendered layouts/_navbar.html.erb (1.7ms)
 Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-03-09 12:37:16 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 5270ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263376306260'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (470.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (533.2ms)
+
+
+Started GET "/" for ::1 at 2018-03-09 12:37:22 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263376306260'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.3ms)
+
+
+Started GET "/" for ::1 at 2018-03-09 12:39:32 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/__navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/_navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263425752100'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.7ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:44:22 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial layouts/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'layouts/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263438668660'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.4ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:56:55 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial layouts/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'layouts/navigation_bar' %>
+    28: 
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263412688380'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (108.0ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:56:59 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial layouts/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'layouts/navigation_bar' %>
+    28: 
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263412688380'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.8ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:58:22 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial about/_navigation_bar, application/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263447819460'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.7ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:58:26 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial about/_navigation_bar, application/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263447819460'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.4ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:58:37 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (14.4ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-8bcb6a8872c9695ea148e7b99e776f3abfffc35828a168d3e7500c3f75e2904a.css?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/about.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/application.self-b27723f1f544f0a6df9fd280776157cac0ecba0424e97aa61f845773c690c1f8.js?body=1" for ::1 at 2018-03-09 12:58:37 -0800
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 12:58:38 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:58:39 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"J9NTCt4PUt/APBxHPC3RV705W4DevP70RYlwWmGMC/eHm4tm83u4Su8pejLzyLgQYFdqJ2Yyx6LaI5VgRy5sSg=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 12:58:40 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 12:58:54 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263440764360'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (98.6ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:01:45 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render partial: 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263465832820'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.3ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:36:36 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render partial: 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263465832820'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.5ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:36:39 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render partial: 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263465832820'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.8ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:37:21 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263438450180'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.6ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:37:24 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263438450180'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.9ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:37:44 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render '/shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263440277180'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.2ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:38:03 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263438747380'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.5ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:38:05 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263438747380'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.3ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:38:08 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'shared/navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263438747380'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.1ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:38:23 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial about/_navigation_bar, application/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263380798600'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.3ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:38:54 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial about/_navigation_bar, application/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jupiterbaudot/Projects/Quoter/app/views"
+):
+    24:   <![endif]-->
+    25: </head>
+    26: <body>
+    27: <%= render 'navigation_bar' %>
+    28: <%= render 'layouts/navbar' %>
+    29: 
+    30: <% if flash[:success] || flash[:danger]%>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__3656312356142246722_70263380798600'
+
+
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.1ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jupiterbaudot/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.8ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:03 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.4ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2018-03-09 13:39:03 -0800
+
+
+Started GET "/assets/application.self-b27723f1f544f0a6df9fd280776157cac0ecba0424e97aa61f845773c690c1f8.js?body=1" for ::1 at 2018-03-09 13:39:03 -0800
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:04 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:14 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:14 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:22 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:23 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:45 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:45 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:47 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"jJHwbbUWAT1lF3qijTtKQ8QA66fgLUuO4AD06WQOFncs2SgBmGLrqEoCHNdC3iMEGW7aAFijcth/qhHTQqxxyg=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:47 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:39:50 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"NqL2MwhLXjrb2OgyWuwAVJxYalDm/PLuFkTUjYTL1wqW6i5fJT+0r/TNjkeVCWkTQTZb915yy7iJ7jG3ommwtw=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:51 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:53 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"jf+bbQTO2Omdml92ue0rtrQWm6Qr8iZEGqijLk8CNZAtt0MBKboyfLKPOQN2CELxaXiqA5N8HxKFAkYUaaBSLQ=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:53 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:39:54 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"c8mcdKdaMhV3gIec0U6SrpixO6Uk4jhQnTjUTURT/uvTgUQYii7YgFiV4ekeq/vpRd8KApxsAQYCkjF3YvGZVg=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:54 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:55 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"BCCECaVRlP2kbEQk7I8GptcKIlhC5RQb/PJLtFci7EmkaFxliCV+aIt5IlEjam/hCmQT//prLU1jWK6OcYCL9A=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:55 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:39:55 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"PKPaZgS5AG8KiWJ6MeBZx0iGYzMWCJo2yjejIRKLkg+c6wIKKc3q+iWcBA/+BTCAlehSlK6Go2BVnUYbNCn1sg=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:56 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:56 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"xSKKIEiT68v4vD9BIs20LeIpLf+khkJg6MK9eSwkgSVlalJMZecBXtepWTTtKN1qP0ccWBwIezZ3aFhDCobmmA=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:57 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:39:57 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"PXXO3gKnN01aY8dm5NHKzppBm92K1OXfRm+dylwpQ5ydPRayL9Pd2HV2oRMrNKOJRy+qejJa3InZxXjweoskIQ=="}
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:58 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:39:58 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"c658nSqNhU3fkR42fh0IwG0cJBWQnI4fSToJ9tykLprT5qTxB/lv2PCEeEOx+GGHsHIVsigSt0nWkOzM+gZJJw=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:39:59 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:39:59 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"esU2irLI2UvsUo420UvNrH8flzOCQ2PdwIJPSM6vgk/aje7mn7wz3sNH6EMerqTronGmlDrNWotfKKpy6A3l8g=="}
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navigation_bar.html.erb (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:40:00 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:40:01 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"cG+jQ9D5A+Lv4Zw+bicBxtiFuWM2MQNJC1ob3x9Psq3QJ3sv/Y3pd8D0+kuhwmiBBeuIxI6/Oh+U8P7lOe3VEA=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:40:01 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:40:03 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"DI0/E5mw1YtysBMvX14/sy/tUwW+zWaqDJPv83/1HuOsxed/tMQ/Hl2ldVqQu1b08oNiogZDX/yTOQrJWVd5Xg=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:40:03 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:40:03 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"Epa/N0aDcu9gOcY+kS2sQe9GYL/NgGs3bGcHUB7t3SOy3mdba/eYek8soEteyMUGMihRGHUOUmHzzeJqOE+6ng=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:40:04 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:45:25 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"r5DoBU4PjgrQO2jPZx8P8E45lKWyHPItuLeCATIgX4UP2DBpY3tkn/8uDrqo+ma3k1elAgqSy3snHWc7FII4OA=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:45:26 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:45:27 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"SvBNV9Ky9FtaBhYdI1xnwmaxzgSRxh4y2Sd+EKcU9WHquJU7/8YeznUTcGjsuQ6Fu9//oylIJ2RGjZsqgbaS3A=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navigation_bar.html.erb (0.0ms)
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:45:27 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:48:25 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.2ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:48:25 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:48:27 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"DlyRV6XIjYQsvqtFkzcMQ6OF0DLhVrAfc9OZ8OVf7gmuFEk7iLxnEQOrzTBc0mUEfuvhlVnYiUnseXzKw/2JtA=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.1ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:48:28 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:48:29 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"mkrtyKrArNdyrhxeyMo6+V6rdqVnL/7ts4QTXMOOCMM6AjWkh7RGQl27eisHL1O+g8VHAt+hx7ssLvZm5Sxvfg=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.3ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:48:29 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:48:30 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"D4SGWcj/W6FEuaqlHPHC0XjOyiGxIrtWLgiW7rixCzevzF415YuxNGuszNDTFKuWpaD7hgmsggCxonPUnhNsig=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.5ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:48:30 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:48:33 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"KD7e5WWio0FNMCklRHWasZ1sfN73fWv1au1WbJp4kzOIdgaJSNZJ1GIlT1CLkPP2QAJNeU/zUqP1R7NWvNr0jg=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.2ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:48:34 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:48:35 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"KHr/xIwdbpfFgKPDyBjPWmdphRqd9Xu+m2KWMiDs4jOIMieooWmEAuqVxbYH/aYduge0vSV7QugEyHMIBk6Fjg=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.4ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:48:35 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:49:22 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"Ep3Tl08o5VaenjJ0q8XtHoqqSMwIiZIc1mmb5oRp6byy1Qv7YlwPw7GLVAFkIIRZV8R5a7AHq0pJw37cosuOAQ=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (3.6ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:49:22 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:49:23 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"0uRuaNWeG1IWmN7jKbD0E7pezeGs71dzj2sEJiZTqKFyrLYE+OrxxzmNuJbmVZ1UZzD8RhRhbiUQweEcAPHPHA=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.3ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:49:24 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:49:24 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"5rN+oQfkIro37j/yRO9OSQh2upLMm9wNS9ml5jk3ZI9G+6bNKpDILxj7WYeLCicO1RiLNXQV5VvUc0DcH5UDMg=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (3.1ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:49:24 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:50:23 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (3.6ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:50:24 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 13:50:26 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"fBTb+mZ5joCvUXyiUu/kLLgJOq3+GQZKPqUl2DfwgzLcXAOWSw1kFYBEGtedCo1rZWcLCkaXPxyhD8DiEVLkjw=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.6ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:50:26 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:50:27 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"jYMHQEBsfKWWwc6q568HVrUm4uVUAPWT9ES9kM5GdJ8ty98sbRiWMLnUqN8oSm4RaEjTQuyOzMVr7liq6OQTIg=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.6ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:50:27 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:50:28 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"Cctep8MiLtimAVWgvsP4WCkk22THZcN+zmSAzIk6Ht6pg4bL7lbETYkUM9VxJpEf9Erqw3/r+ihRzmX2r5h5Yw=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.6ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:50:28 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 13:51:49 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.9ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 13:51:49 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 14:45:33 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (11.5ms)
+Completed 200 OK in 273ms (Views: 267.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:45:34 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 14:46:44 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (3.3ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:46:45 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 14:46:49 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.2ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:46:50 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 14:47:52 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (4.6ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:47:53 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 14:47:57 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"dCQFdjEjwZeUj0nJEpEd9+xd3cDdXiQP2EZUioCZV6rUbN0aHFcrAruaL7zddHSwMTPsZ2XQHVlH7LGwpjswFw=="}
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.0ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:47:57 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 14:47:58 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"NH/Q4DNibc7Ad0sxjfecf6YOcDCwsOkIKNBF+pUBP76UNwiMHhaHW+9iLURCEvU4e2BBlwg+0F63eqDAs6NYAw=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.5ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:47:59 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 14:48:06 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"rm66QJ6ui0zj15VtYYRc1VbhmqX0vBC76DVzKDfuBJ4OJmIss9ph2czC8xiuYTWSi4+rAkwyKe13n5YSEUxjIw=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.4ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:48:06 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 14:52:26 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.4ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 14:52:27 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:02:11 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"7fcwIuqulKw5LsIAMH04x4KPLGnQqQld+YRvTt5E/E9Nv+hOx9p+ORY7pHX/mFGAX+EdzmgnMAtmLop0+Oab8g=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.7ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:02:11 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"7fcwIuqulKw5LsIAMH04x4KPLGnQqQld+YRvTt5E/E9Nv+hOx9p+ORY7pHX/mFGAX+EdzmgnMAtmLop0+Oab8g=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (17.4ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:02:11 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:02:25 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.5ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:02:26 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:02:28 -0800
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.5ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:02:29 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:02:40 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (3.4ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:02:40 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:03:07 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.4ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:03:08 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:04:25 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.8ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:04:26 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:04:32 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"8pDu7SC/4OfaCq5m3tWu7v73yWl6enjhDOHU0tASad5S2DaBDcsKcvUfyBMRMMepI5n4zsL0QbeTSzHo9rAOYw=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.9ms)
+Completed 200 OK in 2615ms (Views: 2614.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-b5bdd33874aca7ea97d270a9fec91bd7d740983bab34b17a094989f050245275.css?body=1" for ::1 at 2018-03-09 15:04:35 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:04:42 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"chvsO6IRYxaWk5TBHAQGBUxjQt/Xm7I6wiNrm/Tr9pXSUzRXj2WJg7mG8rTT4W9CkQ1zeG8Vi2xdiY6h0kmRKA=="}
+  Rendered about/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.2ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-03-09 15:04:46 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"Hkf3qC8GcOWYHZp0CU9rUWp3EDAkpfn5KENekQB1z+e+Dy/EAnKacLcI/AHGqgIWtxkhl5wrwK+36burJteoWg=="}
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.7ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-03-09 15:04:48 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"gluQJl4P8FMegIujUkHZ7gQKxARq8u9R8THicoHXTFciE0hKc3saxjGV7dadpLCp2WT1o9J81gdumwdIp3Ur6g=="}
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.8ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-03-09 15:05:12 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.9ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:05:12 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:05:15 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.9ms)
+Completed 200 OK in 85ms (Views: 84.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:05:16 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:05:21 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.0ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:05:22 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:05:40 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"zXn9cxouCvQMb/fCm4r7FEcBLLAzdPKQ6nAGhNQ87d5tMSUfN1rgYSN6kbdUb5JTmm8dF4v6y8Z12uO+8p6KYw=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.9ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:05:40 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:06:07 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"4aPauuenB/z2NFPjvZDsz1I7TQPlMYn7jt5AcHT4SD1B6wLWytPtadkhNZZydYWIj1V8pF2/sK0RdKVKUlovgA=="}
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.8ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:06:08 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:06:57 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.5ms)
+Completed 200 OK in 2355ms (Views: 2354.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-16c3a26213df1352d7b26bce17f1b7b8b9ff2aec8ea4ab48c986e504992010e7.css?body=1" for ::1 at 2018-03-09 15:06:59 -0800
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:07:00 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:07:04 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.4ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:07:04 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:07:06 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.8ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:07:07 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:12:38 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (3.1ms)
+Completed 200 OK in 2311ms (Views: 2310.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-0aa10b9571cc98a9caef328f389ec1c42a4cd7bca85385e18f4d6b2869381209.css?body=1" for ::1 at 2018-03-09 15:12:40 -0800
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:12:41 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:13:35 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (2.1ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:13:36 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:13:40 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"Cdu5d3J1rfLt+PDCAD9p/ZH6LH5UNErNlOfZKRyq8H+pk2EbXwFHZ8LtlrfP2gC6TJQd2ey6c5sLTTwTOgiXwg=="}
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (1.2ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:13:41 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:13:41 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"7GE3eAE9JAdlZW6lcKtpJcs5T2OFSCekzlcNRcQt/rlMKe8ULEnOkkpwCNC/TgBiFld+xD3GHvJR/eh/4o+ZBA=="}
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.5ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:13:42 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:14:34 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (2.4ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:14:35 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:14:42 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.3ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:14:43 -0800
+
+
+Started GET "/about" for ::1 at 2018-03-09 15:14:44 -0800
+Processing by AboutController#index as HTML
+  Parameters: {"authenticity_token"=>"3y1CB2EAh5ZqzH5lOF5pg5G0TKh3eUH378oq4EOd4Wx/ZZprTHRtA0XZGBD3uwDETNp9D8/3eKFwYM/aZT+G0Q=="}
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (1.4ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:14:45 -0800
+
+
+Started GET "/" for ::1 at 2018-03-09 15:14:46 -0800
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"IOncv4MtWQS7mmWbwQn1R4JdBYpfFnaynKpEP9B/4m+AoQTTrlmzkZSPA+4O7JwAXzM0LeeYT+QDAKEF9t2F0g=="}
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (1.4ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 15:14:47 -0800
