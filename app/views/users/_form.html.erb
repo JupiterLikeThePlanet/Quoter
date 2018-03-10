@@ -1,4 +1,4 @@
-<%= form_for @user do |f| %>
+<%= form_for @user, :html => {:class => "form-horizontal center"} do |f| %>
 <% if @user && @user.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -12,35 +12,70 @@
     </div>
   <% end %>
 
-<div class="label">
-<p>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name  %>
-</p>
+    <!--col-md-4-->
+    <!--col-sm-10-->
 
-<p>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
-</p>
+<div class="">
 
-<p>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-</p>
+  <br>
 
-<p>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-</p>
+  <div class="form-group">
 
-<p>
-  <%= f.label :password_confirmation, "Confirm" %>
-  <%= f.password_field :password_confirmation %>
-</p>
+    <%= f.label :first_name, "First Name: ", class: "col-sm-3 col-xs-4 control-label" %>
 
-<p>
-  <%= f.submit class: 'button tiny radius' %>
-</p>
+    <div class="col-sm-8">
+      <%= f.text_field :first_name, class: "form-control"  %>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <%= f.label :last_name, "Last Name: ", class: "col-sm-3 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_field :last_name, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email , "Email: ", class: "col-sm-3 control-label"%>
+    <div class="col-sm-8">
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password, "Password: ", class: "col-sm-3 control-label" %>
+    <div class="col-sm-8">
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation, "Confirm: ", class: "col-sm-3 control-label" %>
+    <div class="col-sm-8">
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
+
+  </div>
+
+  <br>
+
+
+  <div class="row">
+
+    <div class=" pull-right col-sm-3 hidden-xs" style="margin-right: 2%">
+      <%= f.submit class: "btn btn-default" %>
+      <!--form-group pull-right col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4-->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class=" pull-right hidden-xl hidden-lg hidden-md hidden-sm col-sm-3 col-xs-3" style="margin-right: 8%">
+      <%= f.submit class: "btn btn-default" %>
+      <!--form-group pull-right col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4-->
+    </div>
+  </div>
+
 
 </div>
 
