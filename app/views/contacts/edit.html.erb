@@ -5,18 +5,18 @@
 <div class="container center_div">
 
   <%= form_for @contact, :html => {:class => "form-horizontal center"} do |f| %>
-  <% if @contact && @contact.errors.any? %>
-      <div id="error_explanation">
-        <h2>
-          <%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:
-        </h2>
-        <ul>
-          <% @contact.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
+      <% if @contact && @contact.errors.any? %>
+          <div id="error_explanation">
+            <h2>
+              <%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:
+            </h2>
+            <ul>
+              <% @contact.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
       <br>
 
       <div class="form-group">
@@ -65,4 +65,4 @@
   <%= link_to "< Back", user_url(current_user), method: :get %>
 
 
-</div>
+  </div>
