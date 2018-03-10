@@ -50876,3 +50876,160 @@ Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.4ms)
 
 
 Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:42:52 -0800
+
+
+Started GET "/login" for ::1 at 2018-03-09 17:43:42 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (20.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (26.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_navigation_bar.html.erb (39.4ms)
+Completed 200 OK in 395ms (Views: 358.7ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:43:43 -0800
+
+
+Started GET "/users/new" for ::1 at 2018-03-09 17:44:40 -0800
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (367.7ms)
+  Rendered users/new.html.erb within layouts/application (370.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (1.1ms)
+Completed 200 OK in 451ms (Views: 424.7ms | ActiveRecord: 20.7ms)
+
+
+Started POST "/login" for ::1 at 2018-03-09 17:44:45 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yIiLtmiQaYExeUsV8gqfczcMTU7y+CYu+K9ld6VxUDZowFPaReSDFB5sLWA97/Y06mJ86Up2H3hnBYBNg9M3iw==", "sessions"=>{"email"=>"jupiterbaudot@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "jupiterbaudot@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_navigation_bar.html.erb (1.4ms)
+Completed 200 OK in 126ms (Views: 48.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:44:46 -0800
+
+
+Started POST "/login" for ::1 at 2018-03-09 17:44:52 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNjOXBndccvhkwCJG+V6FzOl4Mdv3Mrv4QtWRGfHyrA4kBYwNKmbXs6GZvzUABNQ7svRYNdS87l+obN+QWWtDQ==", "sessions"=>{"email"=>"jupiterbaudot@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "jupiterbaudot@gmail.com"]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 72ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2018-03-09 17:44:52 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navigation_bar.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 53.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:44:53 -0800
+
+
+Started GET "/contacts" for ::1 at 2018-03-09 17:44:58 -0800
+Processing by ContactsController#index as HTML
+  Parameters: {"authenticity_token"=>"jwNbLE/dpClLUlifamGQosYMfDAsJfUy6qGxj1hvQKgvS4NAYqlOvGRHPuqlhPnlG2JNl5SrzGR1C1S1fs0nFQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (32.8ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = $1  [["user_id", 1]]
+  Rendered contacts/index.html.erb within layouts/application (45.4ms)
+  Rendered shared/_navigation_bar.html.erb (0.4ms)
+Completed 200 OK in 178ms (Views: 66.2ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:44:59 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:45:03 -0800
+Processing by ContactsController#new as HTML
+  Parameters: {"authenticity_token"=>"6ZK9Ajym16FGM0Frj+VOfEZj2NTZO2gAy1Hxa77TPTBJ2mVuEdI9NGkmJx5AACc7mw3pc2G1UVZU+xRRmHFajQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:45:04 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:48:26 -0800
+Processing by ContactsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navigation_bar.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:48:27 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:48:45 -0800
+Processing by ContactsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navigation_bar.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:48:45 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:51:36 -0800
+Processing by ContactsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navigation_bar.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:51:37 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:51:59 -0800
+Processing by ContactsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navigation_bar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:51:59 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:52:02 -0800
+Processing by ContactsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navigation_bar.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:52:02 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:52:43 -0800
+Processing by ContactsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navigation_bar.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:52:44 -0800
+
+
+Started GET "/contacts/new" for ::1 at 2018-03-09 17:53:02 -0800
+Processing by ContactsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navigation_bar.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 17:53:02 -0800
