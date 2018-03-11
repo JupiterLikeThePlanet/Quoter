@@ -1,0 +1,11 @@
+/Users/jupiterbaudot/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20180311-92160-13wzsrh.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20180311-92160-8wc5oc

@@ -1,0 +1,9 @@
+/Users/jupiterbaudot/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20180311-92160-1qd5ii4.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install

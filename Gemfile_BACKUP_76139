@@ -37,7 +37,6 @@ gem 'pundit'
 
 gem 'figaro'
 
-
 # Use Unicorn as the app server
 # gem 'unicorn'
 
