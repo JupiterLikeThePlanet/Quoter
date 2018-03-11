@@ -51747,3 +51747,33 @@ Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.5ms)
 
 
 Started GET "/assets/quill.jpg" for ::1 at 2018-03-09 23:29:37 -0800
+
+
+Started GET "/users/1/edit" for ::1 at 2018-03-11 11:46:34 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (13.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/_form.html.erb (313.7ms)
+  Rendered users/edit.html.erb within layouts/application (318.7ms)
+  Rendered shared/_navigation_bar.html.erb (1.1ms)
+Completed 200 OK in 731ms (Views: 671.1ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-11 11:46:35 -0700
+
+
+Started PATCH "/users/1" for ::1 at 2018-03-11 11:46:39 -0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qolPET08AikGFh9gY7T2f4Hfg5AadZ0p3rPP4/6qs2QKwZd9EEjovCkDeRWsUZ84XLGyN6L7pH9BGSrZ2AjU2Q==", "user"=>{"first_name"=>"Jupiter", "last_name"=>"Baudot", "email"=>"jupiterbaudot@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/edit.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navigation_bar.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quill.jpg" for ::1 at 2018-03-11 11:46:39 -0700
