@@ -9,7 +9,7 @@ gem 'rails', '4.2.5'
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Use PostGresSql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.20'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'sass-rails', '~> 5.0'
@@ -70,4 +70,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+# group :production do
+#   gem 'pg', '~> 0.20'
+#   gem 'rails_12factor'
+# end
 
